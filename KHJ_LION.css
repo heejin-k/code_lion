@@ -1,9 +1,15 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
 .container {
     background-color: #4d4d4d;
     height: 100vh;
 }
 .login {
-    width: 600px;
+    padding:15px 22px;
+    width: 520px;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
@@ -12,11 +18,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
 }
 
-.login h1 { font-size: 18px; border-bottom:2px solid #d6d6d6; font-weight: normal;}
-.login h2 { font-size: 22px; text-align: left; font-weight: normal;}
+.login h1 { 
+            padding:0 0 25px;
+            font-size: 18px; 
+            border-bottom:2px solid #d6d6d6; 
+            position:relative;
+            line-height: 100%;
+            color: #070707;
+        }
+.login h2 { padding:10px 0;font-size: 22px; text-align: left; font-weight: 510;}
 .login p { font-size: 16px; color: #8f8f8f; text-align: left;}
 .login p img { vertical-align: middle;}
 
@@ -29,9 +41,10 @@ a.btn {
     border: 2px solid lightgray; 
     border-radius: 7px;
     font-size: 18px;
-    height: 60px;
-    line-height: 60px;
+    height: 55px;
+    line-height: 55px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 a.btn1{
@@ -42,6 +55,7 @@ a.btn1{
     color: #fff;
     height: 65px;
     line-height: 65px;
+    margin : 20px 0;
 }
 
 a.btn2{
@@ -56,3 +70,76 @@ a.btn4{
 a.btn5{
     border-color: #f2c94c;
 }
+
+/* add img */
+
+h1:before{
+    content: url(KHJ_LION_img/close.png);
+    position: absolute;
+    right:5px;
+    top:0;
+}
+
+a.btn2:before{
+    content: url(KHJ_LION_img/icon_google.png);
+    position: absolute;
+    left:14px;
+    top:4px;
+}
+a.btn3:before{
+    content: url(KHJ_LION_img/icon_facebook.png);
+    position: absolute;
+    left:14px;
+    top:4px;
+}
+a.btn4:before{
+    content: url(KHJ_LION_img/icon_naver.png);
+    position: absolute;
+    left:14px;
+    top:4px;
+}
+a.btn5:before{
+    content: url(KHJ_LION_img/icon_kakao.png);
+    position: absolute;
+    left:14px;
+    top:4px;
+}
+span.or-txt{
+    display: block;
+    margin: 25px 0;
+    position: relative;
+    color: #9b9999;
+}
+span.or-txt:before {
+    content: '';
+    position:absolute;
+    top: 10px;
+    left: 0;
+    background-color:#d6d6d6;
+    width: 45%;
+    height: 2px;
+}
+span.or-txt:after {
+    content: '';
+    position:absolute;
+    top: 10px;
+    right: 0;
+    background-color:#d6d6d6;
+    width: 45%;
+    height: 2px;
+}
+
+/*
+회원가입 | 아이디/비밀번호 찾기
+*/
+
+.link a { position:relative ; 
+    font-size :15px; 
+    color:#8f8f8f;  
+    text-decoration: none;
+    padding: 0 20px;}
+    
+.link a ~ a:after { content:""; 
+    position: absolute; 
+    left:0; top: 3px; height:15px; width: 1px; background:#8f8f8f}
+
