@@ -1,3 +1,58 @@
-h1 { 
-    color: black;
+.container {
+    background-color: #4d4d4d;
+    height: 100vh;
+}
+.login {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    /*center layout*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.login h1 { font-size: 18px; border-bottom:2px solid #d6d6d6; font-weight: normal;}
+.login h2 { font-size: 22px; text-align: left; font-weight: normal;}
+.login p { font-size: 16px; color: #8f8f8f; text-align: left;}
+.login p img { vertical-align: middle;}
+
+
+/* btn layout*/
+a.btn {
+    display: block;
+    text-decoration: none;
+    color: #5a5a5a;
+    border: 2px solid lightgray; 
+    border-radius: 7px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+a.btn1{
+    background-color: #2f80ed;
+    border-color: #2f80ed;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    height: 65px;
+    line-height: 65px;
+}
+
+a.btn2{
+    border-color: #adadad;
+}
+a.btn3{
+    border-color: #2d9cdb;
+}
+a.btn4{
+    border-color: #00bf18;
+}
+a.btn5{
+    border-color: #f2c94c;
 }
