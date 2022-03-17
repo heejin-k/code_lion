@@ -7,8 +7,11 @@
     background-color: #4d4d4d;
     height: 100vh;
 }
+
+.border{
+    padding:0 20px 15px;
+}
 .login {
-    padding:15px 22px;
     width: 520px;
     background-color: #fff;
     border-radius: 10px;
@@ -21,7 +24,8 @@
 }
 
 .login h1 { 
-            padding:0 0 25px;
+
+            padding: 10px 0 23px;
             font-size: 18px; 
             border-bottom:2px solid #d6d6d6; 
             position:relative;
@@ -32,6 +36,16 @@
 .login p { font-size: 16px; color: #8f8f8f; text-align: left;}
 .login p img { vertical-align: middle;}
 
+/*hover*/
+
+.login p img:hover{ cursor: pointer;
+}
+.link a:hover{ color:  #2f80ed;}
+a.btn1:hover{opacity: 0.8;}
+a.btn2:hover{background-color: #adadad54; }
+a.btn3:hover{background-color: #2d9bdb54; }
+a.btn4:hover{background-color: #00bf1950; }
+a.btn5:hover{background-color: #f2c84c59; }
 
 /* btn layout*/
 a.btn {
@@ -76,8 +90,8 @@ a.btn5{
 h1:before{
     content: url(KHJ_LION_img/close.png);
     position: absolute;
-    right:5px;
-    top:0;
+    right:20px;
+    top:10px;
 }
 
 a.btn2:before{
