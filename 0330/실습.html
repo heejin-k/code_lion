@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자만들기</title>
+</head>
+<body>
+    <h1>피자 만들기</h1>
+    
+    <!-- 
+    <img
+    srcset="/0330/img/pizza_600.png 600w, 
+    /0330/img/pizza_500.png 500w, 
+    /0330/img/pizza_300.png 300w"
+    sizes="(min-width : 960px) 300px,
+    (min-width: 620px) 200px, 150px"
+    src="/0330/img/pizza_300.png" 
+    alt="맛있는 피자 사진">
+    -->
+    
+    
+    <picture>
+        <source srcset="/0330/img/pizza_600.png" media="(min-width:960px)">
+        <source srcset="/0330/img/pizza_500.png" media="(min-width:640px)">
+        <img src="/0330/img/pizza_300.png" alt="맛있는 피자">
+    </picture>
+    <ol>
+        <li> 양파와 피망, 버섯을 채 썰어 준비해주세요.</li>
+        <li> 빵에 토마토소스를 바르고 피망, 버섯, 베이컨, 치즈 순으로 넣어주세요</li>
+        <li> 예열된 오븐에 넣고 230에서 10~15분간 구워주세요.</li>
+    </ol>    
+</body>
+</html>

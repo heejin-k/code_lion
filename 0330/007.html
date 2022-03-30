@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="white-space : normal;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.<wbr> In recusandae neque iure praesentium, aperiam tempora iste quos nemo reiciendis porro aut amet dolores eius molestiae rem voluptatum officiis, quasi corrupti?
+    </p>
+    <!-- white-space : noraml / white-space : nowrap
+    한글 로렘은 단어가아니라 한단어씩 떨어짐
+    해결 -> style="word-break:keep-all" 사용하면 영어처럼 단어단위로 떨어짐 -->
+    <a href="www.naver.com">현재창에서 이동</a>
+    <a href="www.naver.com" target ="_blank" >새창으로 이동</a>
+    <a href="#one">click 1</a>
+    <a href="#two">click 2</a>
+    <a href="#three">click 3</a> <!-- 해쉬링크 이 페이지 내에서 이동  -->
+    <a href="./index.html" download>[download]</a>
+    <a href="./hello.hwp" download="a.hwp">[hwp download]</a> 
+    <dl>
+        <dt>WWW</dt>
+        <dd>
+            <dfn>WWW</dfn>는 
+                인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다.
+            - 위키백과
+        </dd>
+    </dl>
+    <dl>
+        <dt>WWW</dt>
+        <dd>
+            <dfn><abbr title="World Wide Web">WWW</abbr></dfn>는 
+                인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다.
+            - 위키백과
+        </dd> <!-- abbr 약어 -->
+    </dl>
+
+    
+    <p>H<sub>2</sub>0</p>
+    <p>x<sup>2</sup>=4</p>
+
+
+    <section id="one" style="height:600px;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi unde modi dolorum, dolor explicabo delectus veniam beatae. Ut, esse ipsa id, doloribus iure, suscipit repellendus saepe possimus nulla distinctio culpa?
+    </section>
+
+    <section id="two" style="height:600px;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi unde modi dolorum, dolor explicabo delectus veniam beatae. Ut, esse ipsa id, doloribus iure, suscipit repellendus saepe possimus nulla distinctio culpa?
+    </section>
+
+    <section id="three" style="height:600px;">
+        <strong>Lorem ipsum,</strong>  dolor sit amet consectetur adipisicing elit. Sequi unde modi dolorum, dolor explicabo delectus veniam beatae. Ut, esse ipsa id, doloribus iure, suscipit repellendus saepe possimus nulla distinctio culpa?
+    </section> 
+    <!-- strong은 굵기 + 강조 -->
+
+
+</body>
+</html>
