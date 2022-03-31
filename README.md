@@ -6,5 +6,5 @@
 
 수업 실습 결과물 입니다.
 상세 정리는 ☑️[velog](https://velog.io/@heejin-k) 에 기록합니다. 📑
- </center
+</center>
 
