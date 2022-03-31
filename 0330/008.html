@@ -15,15 +15,27 @@
     sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
     src="img/rabbit_150.png" alt="rabbit">
 
-    <!-- 이미지 자체가 바뀌지않음 -->
+    <!-- 위) 강의로 배운 코드 아래) 의문코드 출력결과는 같음 -->
 
-    <picture>
+    <img srcset="img/rabbit_500.png 500w,
+    img/rabbit_500.png 300w,
+    img/rabbit_550.png 150w" 
+    sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
+    src="img/rabbit_150.png" alt="rabbit">
+
+    <img srcset="img/rabbit_500.png 500w"
+    sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
+    src="img/rabbit_150.png" alt="rabbit">
+
+    <!-- sizes는 이미지 자체가 바뀌지않음 -->
+
+    <!-- <picture>
         <source srcset="img/rabbit_500.png" media="(min-width:960px)">
         <source srcset="img/rabbit_300.png" media="(min-width:640px)">
         <img src="img/rabbit_150.png" alt="">
-    </picture>
+    </picture> -->
 
-    <!-- 이미지 자체가 바뀜 -->
+    <!-- picture를 사용하면 이미지 자체가 바뀜 -->
 
     
 </body>
