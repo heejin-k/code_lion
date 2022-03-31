@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_study </title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+
+    <style>
+        h1{
+            width:300px;
+            border:1px solid black;
+            padding: 20px;
+            box-sizing: border-box; 
+            /* border box 를 기준으로 사이즈를 무조건 맞춘다
+            설정안한다면 위 코드의 박스사이즈는 300+1+1+20+20으로 342가 됨*/
+        }
+
+        @keyframes 애니 {
+            50%{
+                transform: translate(200px, 0);
+            }
+            100%{
+                transform: translate(200px, 200px);
+            }
+        }
+        div{
+            background-color: rebeccapurple;
+            width: 100px;
+            height: 100px;
+            animation: 애니 2s;
+            transition: all 1s;
+        }
+        div:hover {
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+        }
+
+        .btn {
+            border: 4px solid palevioletred;
+            border-radius: 4px;
+            padding: 30px 60px;
+            background: none;
+            color: palevioletred;
+            font-size: 32px;
+            overflow: hidden; /*글자가 흘러넘치면 자르겠다 아래에 나오는 원모양 넘치는거 자름*/
+            position: relative; /* 아래에 나오는 absolute를 잡는 기준점 */
+            cursor: pointer; 
+            transition: all 0.3s; 
+            
+        }
+
+        .btn:hover {
+            color: white;
+            border:4px solid firebrick;
+        }
+
+        .btn:before {
+            content: "";
+            position: absolute; /* 기준점은 relative, 이게 없으면 최상단이 기준 */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: palevioletred;
+            z-index: -1; /* 뒤로보내기 */
+            border-radius: 100px 100px 0px 0px; /* 원주율 반원만들기 */
+            height: 0px;/* hover할때 일어나게 하려고 */
+            transition: all 0.3s;
+        }
+
+        .btn:hover:before{
+            height: 120px;
+            background-color: firebrick;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+<span class="material-icons">
+search
+
+<div>hello world</div>
+<button class="btn">click me!</button>
+</span>
+</body>
+</html>
