@@ -1,0 +1,15 @@
+
+body{
+    margin: initial;
+}
+div{
+    background-color: fuchsia;
+    width: 400px; 
+    height: 400px;
+    margin: 20px;
+    padding: 100px;
+    border: 20px solid rebeccapurple;
+    margin-left:auto; 
+}
+
+
