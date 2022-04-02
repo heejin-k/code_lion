@@ -29,19 +29,21 @@ body {
     background-image: url(../0401/images/background02.png);
     margin: 0  auto;
     width: 800px;
+    height: 600px;
     border-radius: 20px;
     overflow: hidden;
     border: 10px solid white;
 }
 .signup {
     width: 50%;
-    float: left;
+    float: right;
     background-color:#fcddd7;
 }
 .header{
     font-size: 32px;
     padding: 60px 60px 40px;
     color: rgb(37, 37, 37);
+    text-align: center;
 }
 
 .inputlist {
@@ -71,6 +73,8 @@ input::placeholder{
 }
 
 #submit {
+    display: block;
+    margin: 0 auto;
     height: 40px;
     width: 120px;
     background-color: rgb(253, 103, 103);
@@ -95,13 +99,12 @@ input::placeholder{
 
 }
 
-p{
+.inputlist p{
     font-weight: bold;
     font-size: 15px;
     color: rgb(134, 134, 134);
     margin-bottom: 10px;
 }
-
 
 
 /*sns_signup*/
@@ -119,29 +122,32 @@ p{
     color: white;
 }
 
-.btn {
-
-    background-color: gray;
-    border-radius: 5px;
-    width: 65%;
+.signup-terms {
+    margin-top: 20px;
     text-align: center;
-    height: 20px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 30px auto;
-    padding: 15px;
+
+}
+.terms-p {
     font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.facebook {
-    background-color: #32508e;
+.checkwrap {
+    text-align: center;
+    margin-top: 15px;
+}
+#text {
+    font-size: 14px;
 }
 
-.kakao {
-    background-color: #f2de00;
+.check {
+    color: white;
+    display: inline;
 }
-
-.naver {
-    background-color: #17d727;
+#checkbox{
+    display: inline-block;
+    width: 40px;
+    height: 18px;
 }
