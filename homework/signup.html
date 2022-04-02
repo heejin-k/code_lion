@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <section class="wrap">
+        <section class="all-signup">
+            <section class="signup">
+                <header class="header">
+                    <h1>Sign up</h1>
+                </header>
+                <section class="inputlist">
+                    <form action="/signup.html" method="post">
+                        <input type="text" placeholder="이름" class="inputbox" id ="name"><br>
+                        <input type="id" name="ID" placeholder="아이디" class="inputbox" id="id"><br>
+                        <input type="password" name="PASSWORD" placeholder="비밀번호"class="inputbox" id="password"><br>
+                        <input type="email" name="email" placeholder="이메일" class="inputbox" id="emial"><br>
+                        <p>생년월일</p><input type="date" name="생일" class="inputbox" id="birth"><br>
+                        <p>성별</p> <label for="male">남</label> 
+                        <input type="radio" name="성별" id="" value="male" id="male">
+                        <label for="female">여</label>
+                        <input type="radio" name="성별" id="" value="female" id="female"><br>
+                        <input type="submit" value="submit" id="submit"><br>
+                        </form>
+                </section>
+            </section>
+            <section class="sns_signup">
+                <header class = "sns_header">
+                    <h1>Sign in with <br> social network</h1>
+                </header>
+                <section class = "sns_login">
+                    <a class="btn facebook" href="https://www.facebook.com">Log in with Facebook</a>
+                    <a class="btn kakao" href="https://www.kakaocorp.com">Log in with kakao</a>
+                    <a class="btn naver" href="https://www.naver.com">Log in with Naver</a>
+                </section>
+            </section>
+        </section>
+    </section>
+    
+</body>
+</html>
