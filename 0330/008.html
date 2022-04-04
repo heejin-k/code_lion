@@ -7,7 +7,7 @@
     <title>hello</title>
 </head>
 <body>
-    <img src="../0329/img/dog.jpg" alt="cute_dog" width="600px;">
+    <!-- <img src="../0329/img/dog.jpg" alt="cute_dog" width="600px;"> -->
 
     <img srcset="img/rabbit_500.png 500w,
     img/rabbit_300.png 300w,
@@ -15,7 +15,9 @@
     sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
     src="img/rabbit_150.png" alt="rabbit">
 
-    <!-- 위) 강의로 배운 코드 아래) 의문코드 출력결과는 같음 -->
+    <!-- 위) 강의로 배운 코드 아래) 의문코드 출력결과는 같음
+    해결 : 브라우저가 성능에따라 효율적인 이미지를 선택할 수 없다, 효율성을 위해 srcset 사용!
+밑의 코드는 이미지 사이즈는 바뀌어도 출력되는 이미지는 큰이미지라서 효율적이지 않다. -->
 
     <img srcset="img/rabbit_500.png 500w,
     img/rabbit_500.png 300w,
