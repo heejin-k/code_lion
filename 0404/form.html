@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post"> <!--action어디로 데이터 전달하나,,-->
+        <input type="text" name="text" id=""> <!-- 네임은 서버에 제출할때 키값, 안겹치는게좋음-->
+        <input type="email" name="" id="">
+        <input type="tel" name="" id="">
+
+        <label for="myDevice">현재 사용하고 있는 스마트폰의 제조사를 선택해주세요</label>
+        <select name="device" id="myDevice" > 
+            <!-- multiple : ctrl누르면 여러개 설정가능 -->
+            <option value="">선택</option> <!-- 값안넣어주면 선택안하면 안넘어감-->
+            <option value="iphone">아이폰</option>
+            <option value="galaxy" >갤럭시폰</option>
+            <!-- selected 속성 추가하면 기본값 설정가능 지정안하면 첫번째-->
+            <option value="ㅜㅜ">LG폰</option> 
+            <!-- 전달될땐 value값 전달 -->
+        </select>
+        <input type="text" name="test" required>
+        <input type="submit" value="summit">
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>개인정보</legend> <!-- 필드셋의 제목 -->
+            <label for="myName">이름</label>
+            <label for="myTel">전화번호</label>
+            <input type="tel" name="tel" id="myTel">
+            <label for="myEmail">이메일</label>
+            <input type="email" name="email" id="myEmail">
+        </fieldset>
+        <fieldset>
+            <legend>개인정보 제공 동의</legend>
+            <label for="checkAgree">개인정보 제공에 동의하십니까?</label>
+            <input type="checkbox" name="agree" id="checkAgree">
+        </fieldset>
+        <input type="text" name="name" id="myName">
+
+        <button type="">버튼</button> <!-- 버튼 타입 꼭 쓰기-->
+
+        <!-- input, button차이 -->
+        <input type="submit">
+
+        <button type="submit">
+            버튼
+        </button>
+
+        <textarea name="" id="" cols="30" rows="10">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora alias maxime perferendis unde. Quia neque molestiae perferendis. Sed similique dignissimos excepturi, non harum ea fugit quo sunt minus exercitationem? Quasi.
+        </textarea>
+        <!-- 약관을 textarea할 필요 없음! readonly사용하거나 p이용해서 scroll구현 overflow:scroll-->
+        <label for="solasystem">원하는 행성을 선택하세요 : </label>
+        <input type="text" id="solasystem" list="planets" name="planets">
+        <datalist id="planets">
+            <option value="금성">금성</option>
+            <option value="지구">지구</option>
+            <option value="화성">화성</option>
+            <option value="수성">수성</option>
+        </datalist>
+        <!-- input의 list속성과 data list의 id속성 연결, 옵션에 선택하고 싶은 값이 없는경우 사용자가 원하는거 입력 ex)이메일자동완성 -->
+
+
+    </form> 
+</body>
+</html>
