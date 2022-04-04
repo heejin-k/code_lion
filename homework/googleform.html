@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="googleform.css">
+    <title>google form</title>
+</head>
+<body>
+    <header>
+        <section class="header-wrap" >
+            <div class="top-deco"> ""</div>
+            <section class="header">
+                <h1> 나와 잘 맞는 회사는?</h1>
+                <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+            </section>
+            <div class="trans">
+                <img src="" alt="">nugurejell1@gmail.com (공유되지 않음) 
+                <a href="">계정 전환</a>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <form action="" method="post" class="form">
+            <fieldset>
+                <label>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</label> <br>
+                <input type="radio" name="company" id="naver"> 네 <br>
+                <input type="radio" name="company" id="kakao"> 카 <br>
+                <input type="radio" name="company" id="line"> 라 <br>
+                <input type="radio" name="company" id="cupang"> 쿠 <br>
+                <input type="radio" name="company" id="zeco"> 베 <br>
+            </fieldset>
+            <fieldset> 
+                <label for="">친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두골라주세요</label> <br>
+                <input type="checkbox" name="sns" id="kakaotalk"> 카카오톡 <br>
+                <input type="checkbox" name="sns" id="line_sns"> 라인 <br>
+                <input type="checkbox" name="sns" id="insta-dm"> 인스타그램 디엠 <br>
+                <input type="checkbox" name="sns" id="nateon"> 네이트온 <br>
+                <input type="checkbox" name="sns" id="budybudy"> 버디버디 <br>
+            </fieldset>
+            <fieldset>
+                <label>면접에서 자신의 포부를 한 문장으로 얘기한다면?</label><br>
+                <input type="text"class="answer1" placeholder="내 답변">
+            </fieldset>
+            <fieldset>
+                <label>당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은말은?</label><br>
+                <input type="text" class="answer"placeholder="내 답변">
+            </fieldset>
+            <fieldset>
+                <label>다음 중 기술 면접때 듣고 싶은 질문이 아닌 것은?</label><br>
+                <select name="interview" id="interview">
+                    <option value="">선택</option>
+                    <option value="cs">CS 지식 질문</option>
+                    <option value="pl">프로그래밍 언어 관련 질문</option>
+                    <option value="stack">프로젝트 구현 기술 관련 질문</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>취업을 희망하는 날짜를 선택해주세요.</label><br>
+                <p class="mini-name">날짜</p>
+                <input type="date" class="datetime">
+            </fieldset>
+            <fieldset>
+                <label>업무를 시작 하기에 적당한 시간을 고르세요.</label><br>
+                <p class="mini-name">시간</p>
+                <input type="time" class="time">
+            </fieldset>
+            <section class="bottom">
+                <button type="submit" class="submit">제출</button>
+                <a href="" class="clear">양식 지우기</a>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
