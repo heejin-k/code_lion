@@ -54,11 +54,12 @@ fieldset{
     font-size: 26px;
 }
 
-.form fieldset label{
+.form fieldset .question{
     display: inline-block;
     font-weight: bolder;
     margin-bottom: 20px;
 }
+
 
 .form input,#interview {
     margin-bottom: 15px;
@@ -105,7 +106,7 @@ fieldset{
     border-radius: 5px;
 }
 
-.clear {
+.clear{
     float: right;
     text-decoration: none;
     color: #673bb7;
