@@ -26,7 +26,7 @@ body {
 }
 
 .all-signup{
-    background-image: url(../0401/images/background02.png);
+    background-image: url(/CSS/0401/images/background02.png);
     margin: 0  auto;
     width: 800px;
     height: 600px;
@@ -103,12 +103,13 @@ input::placeholder{
     width: 50%;
     padding: 20px 0;
     background-color: rgb(253, 103, 103);
-    border: none;
+    border: 3px solid transparent;
     font-size: 16px;
     font-weight: bold;
     color: white;
     cursor: pointer;
     text-decoration: none;
+    box-sizing: border-box;
 
 }
 
@@ -147,6 +148,8 @@ input::placeholder{
     margin: 30px auto;
     padding: 15px;
     font-weight: bold;
+    border: 4px solid transparent;
+    
 }
 
 .facebook {

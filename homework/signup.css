@@ -26,7 +26,7 @@ body {
 }
 
 .all-signup{
-    background-image: url(../0401/images/background02.png);
+    background-image: url(/CSS/0401/images/background02.png);
     margin: 0  auto;
     width: 800px;
     height: 600px;
@@ -88,7 +88,7 @@ input::placeholder{
 }
 
 #submit:hover {
-    border: 3px solid rgb(253, 103, 103);
+    border: 3px solid transparent;
     background-color: white;
     color: rgb(253, 103, 103);
 }
