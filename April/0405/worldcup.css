@@ -1,0 +1,38 @@
+/*초기화*/
+caption,body,p{
+    margin: 0;
+    padding: 0;
+}
+
+.img{ 
+    width: 20px;
+    height: inherit; 
+}
+
+body{
+    background-color:rgb(125, 29, 29);
+}
+
+caption{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+caption p {
+    font-size: 25px;
+    margin-bottom:30px;
+}
+th{
+    color: white;
+    font-weight: bold;
+}
+
+table {
+margin: 100px auto;
+}
+
+td {
+    background-color: white;
+    color: rgb(125, 29, 29);
+}
