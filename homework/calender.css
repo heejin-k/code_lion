@@ -1,0 +1,67 @@
+/*reset*/
+header,h1,p{
+    margin: 0;
+}
+
+/*design*/
+
+body{
+    background-color: rgb(239, 221, 255);
+}
+
+.all-wrap{
+    margin: 100px auto;
+    padding: 40px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.447);
+    border-radius: 50px;
+
+}
+.header{
+    text-align: center;
+}
+
+.header h1{
+    color: rgb(142, 72, 255);
+    font-size: 50px;
+}
+
+.header p{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(87, 87, 87);
+}
+
+.april,.may,.jun,.july{
+padding: 20px;
+}
+
+caption {
+    color: rgb(155, 109, 255);
+    font-weight: bold;
+}
+
+.april-may,.jun-july{
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.april,.jun{
+    float: left;
+}
+.may,.july{
+    float: right;
+}
+
+.table-wrap{
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+th:nth-child(1),td:nth-child(1){
+    color: rgb(250, 87, 120);
+}
