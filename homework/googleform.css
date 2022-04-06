@@ -7,8 +7,9 @@ body,header,h1,input{
 
 /*디자인*/
 body {
+    width: 800px;
     color:rgb(54, 54, 54);
-    margin: 25px;
+    margin: 25px auto;
     background-color:#f0ebf8 ;
 }
 
@@ -111,6 +112,9 @@ fieldset{
     text-decoration: none;
     color: #673bb7;
     font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .mini-name {
