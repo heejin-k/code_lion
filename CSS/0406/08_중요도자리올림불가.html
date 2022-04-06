@@ -1,0 +1,34 @@
+<head>
+    <style>
+        /* 10점 */
+        .h1 {
+            color: red;
+        }
+        /* 12점이지만 1점짜리가 모인거라 위가 더 우선순위 */
+        html body div div div div div div div div div h1 {
+            background: #000;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <h1 class="h1">hello</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
