@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /* animaion */
+        @keyframes 귀오른쪽 {
+            from {
+                transform: rotate(30deg);
+            }
+            to {
+                transform: rotate(40deg) translate(10px);
+            }
+        }
+        @keyframes 귀왼쪽 {
+            from {
+                transform: rotate(-30deg);
+            }
+            to {
+                transform: rotate(-40deg) translate(-10px);
+            }
+        }
+
+        /* reset */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* design */
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(255, 215, 230);
+        }
+
+        .name {
+            margin-top: 200px;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .memo {
+            position: relative;
+            background-color: transparent;
+            /* border: 5px solid rgb(149, 156, 255); */
+            top: 100px;
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+        }
+
+        .memo .ear {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            border: 6px solid #000;
+            border-radius: 50%;
+            background-color: #6b5941;
+        }
+        .memo .ear.left {
+            top: 35px;
+            left: 65px;
+            transform: rotate(-30deg);
+            border-radius: 46% 54% 44% 56% / 55% 69% 31% 45%    ;
+            animation: 귀왼쪽 1s infinite alternate;
+            animation-delay: 1s;
+        }
+
+        .memo .ear.right {
+            top: 35px;
+            right: 65px;
+            transform: rotate(30deg);
+            border-radius: 54% 46% 56% 44% / 69% 55% 45% 32% ;
+            animation: 귀오른쪽 1s infinite alternate;
+            animation-delay: 1s;
+        }
+
+        .memo .earline.left {
+
+                        position: absolute;
+            top: 45px;
+            left: 20px;
+            width: 60px;
+            background-color: #000;
+            border: 3px solid #000;
+            border-radius: 30%;
+            transform: rotate(80deg);
+            border-radius: 60% 0 0 10%;
+        }
+
+        .memo .earline.right {
+            position: absolute;
+            top: 45px;
+            right: 20;
+            width: 60px;
+            background-color: #000;
+            border: 3px solid #000;
+            border-radius: 30%;
+            transform: rotate(105deg);
+            border-radius: 10% 0 0 60%;
+        } 
+
+        .memo .face-top {
+            position: absolute;
+            top: 50px;
+            width: 300px;
+            height: 300px;
+            left: 100px;
+            border-radius: 50%;
+            background-color: #fffefb;
+            border: 6px solid #000;
+        }
+        .memo .face-bottom {
+            position: absolute;
+            bottom: 120px;
+            width: 330px;
+            height: 230px;
+            left: 85px;
+            border-radius: 50%;
+            background-color: #fffefb;
+            border: 6px solid #000;
+        }
+
+        .memo .face-middle {
+            z-index: 1;
+            position: absolute;
+            top: 80px;
+            width: 289px;
+            height: 290px;
+            left: 106px;
+            border-radius: 50%;
+            background-color: #fffefb;
+        }
+
+        .memo .face-left,.face-right {
+            z-index: 2;
+            top: 50px;
+            position: absolute;
+            width: 142px;
+            height: 232px;   ;           
+            border: 4px solid #000;
+            background-color: #c1965e;
+        }
+        .memo .face-right {
+            left: 110px;
+            width: 115px;
+            height: 214px; 
+            transform: rotate(9deg);
+            border-radius: 89% 11% 56% 44% / 66% 68% 32% 34%         ;           
+        }
+
+        .memo .face-left {
+            right: 110px;
+            transform: rotate(-27deg);
+            border-radius: 48% 52% 55% 45% / 71% 49% 51% 29%  ;
+            background-color: #4e3a20;             
+        }
+
+        .memo .eye {
+            z-index: 2;
+            position: absolute;
+            top: 130px;
+            width: 23px;
+            height: 30px;
+            background-color: #000;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .eye.left{
+            transform: rotate(10deg);
+            left:65px;
+            border-radius: 52% 48% 49% 51% / 54% 57% 43% 46% ;
+        }
+
+        .eye.right{
+            transform: rotate(-10deg);
+            right: 65px;
+            border-radius: 48% 52% 51% 49% / 57% 54% 46% 43% ;
+        }
+        .eye .left-twinkle, .right-twinkle {
+            z-index: 3;
+            top: 6px;
+            left: 6px;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .nose {
+            position: absolute;
+            z-index: 3;
+            background-color: #ffeef9;
+            box-shadow: -1px -1px 3px 3px rgba( 255,238,249, 1);
+            width: 40px;
+            height: 38px;
+            top: 190px;
+            left: 120px;
+            border-radius: 48% 52% 49% 51% / 27% 27% 73% 73%  ;
+        }
+
+        .nose-left,.nose-right{
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            width: 2px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .nose-left{
+            transform: rotate(-25deg);
+            left: 12px
+
+        }
+        .nose-right {
+            right: 14px;
+            transform: rotate(25deg);
+        }
+
+        .mouth-left,.mouth-right{
+            z-index: 3;
+            top: 4px;
+            position: absolute;
+            width: 22px;
+            height: 35px;
+            border: 4px solid black;
+            border-radius: 50%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: none;
+        }
+        .mouth-left{
+            left: -2px;
+
+        }
+        .mouth-right{
+            right: -2px;
+        }
+
+        .mouth-bottom{
+            position: absolute;
+            z-index: 2;
+            bottom: -9px;
+            left: 13px;
+            background-color: #CE705F;
+            width: 13px;
+            height: 17px;
+            border-radius:52% 48% 49% 51% / 69% 71% 29% 31%  ;
+        }
+
+        .whisker{
+            position: absolute;
+            z-index: 5;
+            width: 140px;
+            height: 30px;
+            border: 2px solid rgb(43, 43, 43);
+            border-radius: 50%;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            top: 250px;
+        }
+
+        .whisker.right1{
+            transform: rotate(10deg);
+            width: 120px;
+            left: 70px;
+        }
+        .whisker.right2{
+            top: 280px;
+            left: 50px;
+            transform: rotate(-4deg);
+        }
+        .whisker.right3{
+            top: 310px;
+            transform: rotate(-20deg);
+            left: 90px;
+            width: 110px;
+            
+        }
+        .whisker.left1{
+            transform: rotate(-10deg);
+            width: 120px;
+            right: 70px;
+        }
+        .whisker.left2{
+            top: 280px;
+            right: 50px;
+            transform: rotate(4deg);
+        }
+        .whisker.left3{
+            top: 310px;
+            transform: rotate(20deg);
+            right: 90px;
+            width: 110px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="name">기니피그</h1>
+    <div class="memo">
+        <div class="ear left">
+            <div class="earline left"></div>
+        </div>
+        <div class="ear right">
+            <div class="earline right"></div>
+        </div>
+        <div class="wrap-face">
+            <div class="face-right"></div>
+            <div class="face-left"></div>
+            <div class="face-middle"></div>
+            <div class="face-bottom"></div>
+            <div class="face-top">
+                <div class="eye left">
+                    <div class="left-twinkle"></div>
+                </div>
+                <div class="eye right">
+                    <div class="right-twinkle"></div>
+                </div>
+                <div class="nose">
+                    <div class="nose-left"></div>
+                    <div class="nose-right"></div>
+                    <div class="mouth-left"></div>
+                    <div class="mouth-right"></div>
+                    <div class="mouth-bottom"></div>
+                </div>
+            </div>
+            <div>
+                <div class="whisker right1"></div>
+                <div class="whisker right2"></div>
+                <div class="whisker right3"></div>
+                <div class="whisker left1"></div>
+                <div class="whisker left2"></div>
+                <div class="whisker left3"></div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
