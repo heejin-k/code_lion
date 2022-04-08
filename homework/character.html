@@ -2,6 +2,11 @@
 <html lang="ko">
 <head>
     <style>
+        /* font */
+    @font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    }
         /* animaion */
         @keyframes 귀오른쪽 {
             from {
@@ -42,9 +47,10 @@
             color: white;
             font-size: 60px;
             text-align: center;
+            font-family: 'IM_Hyemin-Bold';
         }
 
-        .memo {
+        .cavy {
             position: relative;
             background-color: transparent;
             /* border: 5px solid rgb(149, 156, 255); */
@@ -54,7 +60,7 @@
             height: 500px;
         }
 
-        .memo .ear {
+        .cavy .ear {
             position: absolute;
             top: 0;
             width: 100px;
@@ -63,7 +69,7 @@
             border-radius: 50%;
             background-color: #6b5941;
         }
-        .memo .ear.left {
+        .cavy .ear.left {
             top: 35px;
             left: 65px;
             transform: rotate(-30deg);
@@ -72,7 +78,7 @@
             animation-delay: 1s;
         }
 
-        .memo .ear.right {
+        .cavy .ear.right {
             top: 35px;
             right: 65px;
             transform: rotate(30deg);
@@ -81,7 +87,7 @@
             animation-delay: 1s;
         }
 
-        .memo .earline.left {
+        .cavy .earline.left {
 
                         position: absolute;
             top: 45px;
@@ -94,7 +100,7 @@
             border-radius: 60% 0 0 10%;
         }
 
-        .memo .earline.right {
+        .cavy .earline.right {
             position: absolute;
             top: 45px;
             right: 20;
@@ -106,7 +112,7 @@
             border-radius: 10% 0 0 60%;
         } 
 
-        .memo .face-top {
+        .cavy .face-top {
             position: absolute;
             top: 50px;
             width: 300px;
@@ -116,7 +122,7 @@
             background-color: #fffefb;
             border: 6px solid #000;
         }
-        .memo .face-bottom {
+        .cavy .face-bottom {
             position: absolute;
             bottom: 120px;
             width: 330px;
@@ -127,7 +133,7 @@
             border: 6px solid #000;
         }
 
-        .memo .face-middle {
+        .cavy .face-middle {
             z-index: 1;
             position: absolute;
             top: 80px;
@@ -138,7 +144,7 @@
             background-color: #fffefb;
         }
 
-        .memo .face-left,.face-right {
+        .cavy .face-left,.face-right {
             z-index: 2;
             top: 50px;
             position: absolute;
@@ -147,7 +153,7 @@
             border: 4px solid #000;
             background-color: #c1965e;
         }
-        .memo .face-right {
+        .cavy .face-right {
             left: 110px;
             width: 115px;
             height: 214px; 
@@ -155,14 +161,14 @@
             border-radius: 89% 11% 56% 44% / 66% 68% 32% 34%         ;           
         }
 
-        .memo .face-left {
+        .cavy .face-left {
             right: 110px;
             transform: rotate(-27deg);
             border-radius: 48% 52% 55% 45% / 71% 49% 51% 29%  ;
             background-color: #4e3a20;             
         }
 
-        .memo .eye {
+        .cavy .eye {
             z-index: 2;
             position: absolute;
             top: 130px;
@@ -309,8 +315,8 @@
     </style>
 </head>
 <body>
-    <h1 class="name">기니피그</h1>
-    <div class="memo">
+    <h1 class="name">HTML & CSS로 <br>기니피그 그리기 ❤️</h1>
+    <div class="cavy">
         <div class="ear left">
             <div class="earline left"></div>
         </div>
