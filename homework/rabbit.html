@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rabbit</title>
     <style>
-        /* font */
-    @font-face {
-    font-family: 'IM_Hyemin-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-    }
-        /* animaion */
-        @keyframes 귀오른쪽 {
+                /* animaion */
+
+        @keyframes 토끼귀오른쪽 {
             from {
-                transform: rotate(30deg);
             }
             to {
-                transform: rotate(40deg) translate(10px);
+                transform: rotate(15deg) translate(20px);
             }
         }
-        @keyframes 귀왼쪽 {
+        @keyframes 토끼귀왼쪽 {
             from {
-                transform: rotate(-30deg);
             }
             to {
-                transform: rotate(-40deg) translate(-10px);
+                transform: rotate(-15deg) translate(-20px);
             }
         }
 
@@ -116,81 +114,61 @@
 
         body {
             background: rgb(255, 215, 230);
-        }
-
-        .wrap {
-            margin-top: 150px;
-            text-align: center;
-        }
-        h2 {
-            color: white;
-            font-size: 36px;
-            font-family: 'IM_Hyemin-Bold';
-        }
-        .cavy {
+        } 
+        
+        .rabbit {
+            margin: 300px auto;
             position: relative;
             background-color: transparent;
             top: 100px;
-            display: inline-block;
             width: 500px;
             height: 500px;
         }
 
-        .cavy .ear {
+        .rabbit .ear {
             position: absolute;
-            top: 0;
-            width: 100px;
-            height: 100px;
+            top: -120px;
+            width: 95px;
+            height: 235px;
             border: 6px solid #000;
-            border-radius: 50%;
-            background-color: #6b5941;
+            background-color: #696969;
         }
-        .cavy .ear.left {
-            top: 35px;
-            left: 74px;
-            transform: rotate(-30deg);
-            border-radius: 70% 100% 31% 100% / 91% 99% 100% 57%;
-            /* border-radius: 46% 54% 44% 56% / 55% 69% 31% 45%    ; */
-            animation: 귀왼쪽 1s infinite alternate;
-            animation-delay: 1s;
+        .rabbit .ear.left {
+            left: 135px;
+            transform: rotate(-5deg);
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%     ;
+            animation: 토끼귀왼쪽 1.2s infinite alternate;
         }
 
-        .cavy .ear.right {
-            top: 35px;
-            right: 74px;
-            transform: rotate(30deg);
-            border-radius:  100% 70%  100% 31% /  99%  91% 57% 100%;
-            animation: 귀오른쪽 1s infinite alternate;
-            animation-delay: 1s;
+        .rabbit .ear.right {
+            right: 135px;
+            transform: rotate(5deg);
+            border-radius: 100% 64% 42% 42% /  79% 81%  33% 38%   ;
+            animation: 토끼귀오른쪽 1.2s infinite alternate;
         }
-
-        .cavy .earline.left {
-
+        .rabbit .earline {
             position: absolute;
-            top: 35px;
-            left: 23px;
-            width: 60px;
-            height: 40px;
-            border: 3px solid #000;
+            top: 30px;
+            left: 20px;
+            width: 50px;
+            height: 170px;
+            border: 4px solid #000;
             border-radius: 30%;
-            transform: rotate(80deg);
-            border-radius: 70% 0 0 16%;
+            transform: rotate(2deg);
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%   ;
             border-bottom: none;
+            background-color:  #ffeef9;
+            }
+        .rabbit .earline.left {
+            border-left: none;
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%   ;
         }
 
-        .cavy .earline.right {
-            position: absolute;
-            top: 38px;
-            right: 25px;
-            width: 60px;
-            height: 40px;
-            border: 3px solid #000;
-            border-radius: 30%;
-            transform: rotate(80deg);
-            border-radius: 16% 0 0 70%;
-            border-top: none;
-        } 
-
+        .rabbit .earline.right {
+            border-radius: 100% 64% 42% 42% /  79% 81%  33% 38% ;
+            border-right: none;
+            left: 13px;
+            }
         .face-top {
             position: absolute;
             top: 50px;
@@ -230,21 +208,21 @@
             width: 142px;
             height: 232px;   ;           
             border: 4px solid #000;
-            background-color: #c1965e;
         }
         .face-right {
             left: 110px;
             width: 115px;
             height: 214px; 
             transform: rotate(9deg);
-            border-radius: 89% 11% 56% 44% / 66% 68% 32% 34%         ;           
+            border-radius: 89% 11% 56% 44% / 66% 68% 32% 34% ;
+            background-color: #999999;           
         }
 
         .face-left {
             right: 110px;
             transform: rotate(-27deg);
             border-radius: 48% 52% 55% 45% / 71% 49% 51% 29%  ;
-            background-color: #4e3a20;             
+            background-color: #525252;            
         }
 
         .eye {
@@ -334,27 +312,15 @@
 
         .mouth-bottom{
             position: absolute;
-            z-index: 3;
+            z-index: 2;
             top: 32px;
             left: 11px;
-            background-color: #e9718b;
+            background-color: #CE705F;
             width: 18px;
             height: 20px;
             border-radius:52% 48% 49% 51% / 69% 71% 29% 31%  ;
             animation: 입 1.2s infinite alternate;
                 }
-
-        .carrot-mark{
-            position: absolute;
-            z-index: 2;
-            top: 25px;
-            left:-3px;
-            background-color: #f3803ea6;
-            box-shadow: -1px -1px 6px 3px #f3803ea6;
-            width: 50px;
-            height: 30px;
-            border-radius:100% 52% 90% 67% / 59% 88% 68% 78%  ;
-        }
 
         .whisker{
             position: absolute;
@@ -459,14 +425,10 @@
             transform: rotate(3deg);
         }
 
-
-
-
     </style>
 </head>
 <body>
-    <div class="wrap">
-    <div class="cavy">
+    <div class="rabbit">
         <div class="ear left">
             <div class="earline left"></div>
         </div>
@@ -491,7 +453,6 @@
                     <div class="mouth-left"></div>
                     <div class="mouth-right"></div>
                     <div class="mouth-bottom"></div>
-                    <div class="carrot-mark"></div>
                 </div>
             </div>
             <div>
@@ -510,9 +471,6 @@
                 <div class="carrot5"></div>       
             </div>
         </div>
-    </div>
-    <h2> 안뇽 나는 기니피그야 <br>
-몰래 당근 훔쳐먹다 들켰지모야..?🥕</h2>
     </div>
 </body>
 </html>
