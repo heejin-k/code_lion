@@ -1,0 +1,455 @@
+        /* font */
+        @font-face {
+            font-family: 'IM_Hyemin-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+            }
+                /* animaion */
+                @keyframes 귀오른쪽 {
+                    from {
+                        transform: rotate(30deg);
+                    }
+                    to {
+                        transform: rotate(40deg) translate(10px);
+                    }
+                }
+                @keyframes 귀왼쪽 {
+                    from {
+                        transform: rotate(-30deg);
+                    }
+                    to {
+                        transform: rotate(-40deg) translate(-10px);
+                    }
+                }
+
+                @keyframes 입 {
+                    from {
+        
+                    }
+                    to {
+                        height: 0px;
+                        background-color: transparent;   
+                    }
+                }
+        
+                @keyframes 콧구멍 {
+                    from {
+        
+                    }
+                    to {
+                        width: 4px;
+                    }
+                }
+        
+                @keyframes 오른쪽수염1 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(5deg);
+        
+                    }
+                    
+                }
+        
+                @keyframes 오른쪽수염2 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(-10deg);
+        
+                    }
+                    
+                }
+                @keyframes 오른쪽수염3 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(-25deg);
+        
+                    }
+                    
+                }
+                @keyframes 왼쪽수염1 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(-5deg);
+        
+                    }
+                    
+                }
+        
+                @keyframes 왼쪽수염2 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(10deg);
+        
+                    }
+                    
+                }
+                @keyframes 왼쪽수염3 {
+                    from {
+                        
+                    }
+                    to { transform: rotate(25deg);
+        
+                    }
+                    
+                }
+        
+                /* reset */
+                body{
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                /* design */
+                *,
+                *:after,
+                *:before {
+                    box-sizing: border-box;
+                }
+        
+                body {
+                    background: rgb(255, 215, 230);
+                }
+        
+                .wrap {
+                    margin-top: 150px;
+                    text-align: center;
+                }
+                h2 {
+                    color: white;
+                    font-size: 36px;
+                    font-family: 'IM_Hyemin-Bold';
+                }
+                .cavy {
+                    position: relative;
+                    background-color: transparent;
+                    top: 100px;
+                    display: inline-block;
+                    width: 500px;
+                    height: 500px;
+                }
+        
+                .cavy .ear {
+                    position: absolute;
+                    top: 0;
+                    width: 100px;
+                    height: 100px;
+                    border: 6px solid #000;
+                    border-radius: 50%;
+                    background-color: #6b5941;
+                }
+                .cavy .ear.left {
+                    top: 35px;
+                    left: 74px;
+                    transform: rotate(-30deg);
+                    border-radius: 70% 100% 31% 100% / 91% 99% 100% 57%;
+                    /* border-radius: 46% 54% 44% 56% / 55% 69% 31% 45%    ; */
+                    animation: 귀왼쪽 1s infinite alternate;
+                    animation-delay: 1s;
+                }
+        
+                .cavy .ear.right {
+                    top: 35px;
+                    right: 74px;
+                    transform: rotate(30deg);
+                    border-radius:  100% 70%  100% 31% /  99%  91% 57% 100%;
+                    animation: 귀오른쪽 1s infinite alternate;
+                    animation-delay: 1s;
+                }
+        
+                .cavy .earline.left {
+        
+                    position: absolute;
+                    top: 35px;
+                    left: 23px;
+                    width: 60px;
+                    height: 40px;
+                    border: 3px solid #000;
+                    border-radius: 30%;
+                    transform: rotate(80deg);
+                    border-radius: 70% 0 0 16%;
+                    border-bottom: none;
+                }
+        
+                .cavy .earline.right {
+                    position: absolute;
+                    top: 38px;
+                    right: 25px;
+                    width: 60px;
+                    height: 40px;
+                    border: 3px solid #000;
+                    border-radius: 30%;
+                    transform: rotate(80deg);
+                    border-radius: 16% 0 0 70%;
+                    border-top: none;
+                } 
+        
+                .face-top {
+                    position: absolute;
+                    top: 50px;
+                    width: 300px;
+                    height: 300px;
+                    left: 100px;
+                    border-radius: 50%;
+                    background-color: #fffefb;
+                    border: 6px solid #000;
+                }
+                .face-bottom {
+                    position: absolute;
+                    bottom: 120px;
+                    width: 330px;
+                    height: 230px;
+                    left: 85px;
+                    border-radius: 50%;
+                    background-color: #fffefb;
+                    border: 6px solid #000;
+                }
+        
+                .face-middle {
+                    z-index: 1;
+                    position: absolute;
+                    top: 80px;
+                    width: 289px;
+                    height: 290px;
+                    left: 106px;
+                    border-radius: 50%;
+                    background-color: #fffefb;
+                }
+        
+                .face-left,.face-right {
+                    z-index: 2;
+                    top: 50px;
+                    position: absolute;
+                    width: 142px;
+                    height: 232px;   ;           
+                    border: 4px solid #000;
+                    background-color: #c1965e;
+                }
+                .face-right {
+                    left: 110px;
+                    width: 115px;
+                    height: 214px; 
+                    transform: rotate(9deg);
+                    border-radius: 89% 11% 56% 44% / 66% 68% 32% 34%         ;           
+                }
+        
+                .face-left {
+                    right: 110px;
+                    transform: rotate(-27deg);
+                    border-radius: 48% 52% 55% 45% / 71% 49% 51% 29%  ;
+                    background-color: #4e3a20;             
+                }
+        
+                .eye {
+                    z-index: 2;
+                    position: absolute;
+                    top: 130px;
+                    width: 23px;
+                    height: 30px;
+                    background-color: #000;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+                }
+        
+                .eye.left{
+                    transform: rotate(10deg);
+                    left:65px;
+                    border-radius: 52% 48% 49% 51% / 54% 57% 43% 46% ;
+                }
+        
+                .eye.right{
+                    transform: rotate(-10deg);
+                    right: 65px;
+                    border-radius: 48% 52% 51% 49% / 57% 54% 46% 43% ;
+                }
+                .eye .left-twinkle, .right-twinkle {
+                    z-index: 3;
+                    top: 6px;
+                    left: 7px;
+                    position: absolute;
+                    width: 4.5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: white;
+                }
+                .nose {
+                    position: absolute;
+                    z-index: 3;
+                    background-color: #ffeef9;
+                    box-shadow: -1px -1px 3px 3px rgba( 255,238,249, 1);
+                    width: 40px;
+                    height: 38px;
+                    top: 190px;
+                    left: 120px;
+                    border-radius: 48% 52% 49% 51% / 27% 27% 73% 73%  ;
+                }
+        
+                .nose-left,.nose-right{
+                    z-index: 2;
+                    position: absolute;
+                    top: 10px;
+                    width: 3px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    animation: 콧구멍 1s infinite alternate;
+                }
+        
+                .nose-left{
+                    transform: rotate(-25deg);
+                    left: 13px
+        
+                }
+                .nose-right {
+                    right: 13px;
+                    transform: rotate(25deg);
+                }
+        
+                .mouth-left,.mouth-right{
+                    z-index: 3;
+                    top: 4px;
+                    position: absolute;
+                    width: 22px;
+                    height: 35px;
+                    border: 4px solid black;
+                    border-radius: 50%;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    background-color: none;
+                }
+                .mouth-left{
+                    left: -2px;
+        
+                }
+                .mouth-right{
+                    right: -2px;
+                }
+        
+                .mouth-bottom{
+                    position: absolute;
+                    z-index: 3;
+                    top: 32px;
+                    left: 11px;
+                    background-color: #e9718b;
+                    width: 18px;
+                    height: 20px;
+                    border-radius:52% 48% 49% 51% / 69% 71% 29% 31%  ;
+                    animation: 입 1.2s infinite alternate;
+                        }
+        
+                .carrot-mark{
+                    position: absolute;
+                    z-index: 2;
+                    top: 25px;
+                    background-color: #f3803ea6;
+                    box-shadow: -1px -1px 6px 3px #f3803ea6;
+                    width: 43px;
+                    height: 25px;
+                    border-radius:100% 52% 90% 67% / 59% 88% 68% 78%  ;
+                }
+        
+                .whisker{
+                    position: absolute;
+                    z-index: 5;
+                    width: 140px;
+                    height: 30px;
+                    border: 2px solid rgb(43, 43, 43);
+                    border-radius: 50%;
+                    border-bottom: none;
+                    border-left: none;
+                    border-right: none;
+                    top: 250px;
+                }
+        
+                .whisker.right1{
+                    transform: rotate(10deg);
+                    width: 120px;
+                    left: 70px;
+                    animation: 오른쪽수염1 1s infinite alternate;
+                }
+                .whisker.right2{
+                    top: 280px;
+                    left: 50px;
+                    transform: rotate(-4deg);
+                    animation: 오른쪽수염2 0.9s infinite alternate;
+                }
+                .whisker.right3{
+                    top: 310px;
+                    transform: rotate(-20deg);
+                    left: 90px;
+                    width: 110px;
+                    animation: 오른쪽수염3 1s infinite alternate;
+                    
+                }
+                .whisker.left1{
+                    transform: rotate(-10deg);
+                    width: 120px;
+                    right: 70px;
+                    animation: 왼쪽수염1 0.9s infinite alternate;
+                }
+                .whisker.left2{
+                    top: 280px;
+                    right: 50px;
+                    transform: rotate(4deg);
+                    animation: 왼쪽수염2 1s infinite alternate;
+                }
+                .whisker.left3{
+                    top: 310px;
+                    transform: rotate(20deg);
+                    right: 90px;
+                    width: 110px;
+                    animation: 왼쪽수염3 0.9s infinite alternate;
+                    
+                }
+        
+                .carrot {
+                    z-index: 2;
+                    position: absolute;
+                    height: 55px;
+                    width: 130px;
+                    left: 171px;
+                    top: 18px;
+                    background-color: rgb(255, 110, 53);
+                    border-radius: 88% 51% 32% 72% / 100% 60% 50% 44%    ;
+                    border: 5px solid black;
+                }
+        
+                .carrot1,.carrot2,.carrot3 {
+                    position: absolute;
+                    left: 115px;
+                    top: 2px;
+                    height: 15px;
+                    transform: rotate(-10deg);
+                    width: 40px;
+                    border-radius: 52% 47% 32% 53% / 64% 60% 42% 36% ;
+                    background-color: green;
+                    border: 4px solid black;
+                }
+                .carrot2{
+                    top: 12px;
+                    transform: rotate(0deg);
+                }
+                .carrot3{
+                    top: 22px;
+                    transform: rotate(12deg);
+        
+                }
+                .carrot4,.carrot5 {
+                    position: absolute;
+                    width: 4px;
+                    height: 30px;
+                    top: -18px;
+                    left: 90px;
+                    background-color: #000;
+                    border-radius: 30%;
+                    transform: rotate(7deg);
+                }
+                .carrot5 {
+                    left: 78px;
+                    height: 25px;
+                    top: -15px;
+                    transform: rotate(3deg);
+                }
