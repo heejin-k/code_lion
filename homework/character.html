@@ -25,6 +25,21 @@
             }
         }
 
+        @keyframes 토끼귀오른쪽 {
+            from {
+            }
+            to {
+                transform: rotate(15deg) translate(20px);
+            }
+        }
+        @keyframes 토끼귀왼쪽 {
+            from {
+            }
+            to {
+                transform: rotate(-15deg) translate(-20px);
+            }
+        }
+
         @keyframes 입 {
             from {
 
@@ -100,25 +115,6 @@
             }
             
         }
-    
-        /* .whisker.right1{
-            transform: rotate(10deg);
-            width: 120px;
-            left: 70px;
-        }
-        .whisker.right2{
-            top: 280px;
-            left: 50px;
-            transform: rotate(-4deg);
-        }
-        .whisker.right3{
-            top: 310px;
-            transform: rotate(-20deg);
-            left: 90px;
-            width: 110px;
-            
-        } */
-
 
         /* reset */
         body{
@@ -144,12 +140,21 @@
             text-align: center;
             font-family: 'IM_Hyemin-Bold';
         }
-
+        .wrap {
+            margin-top: 100px;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'IM_Hyemin-Bold';
+        }
         .cavy {
             position: relative;
             background-color: transparent;
             top: 100px;
-            margin:  auto;
+            display: inline-block;
             width: 500px;
             height: 500px;
         }
@@ -208,7 +213,7 @@
             border-top: none;
         } 
 
-        .cavy .face-top {
+        .face-top {
             position: absolute;
             top: 50px;
             width: 300px;
@@ -218,7 +223,7 @@
             background-color: #fffefb;
             border: 6px solid #000;
         }
-        .cavy .face-bottom {
+        .face-bottom {
             position: absolute;
             bottom: 120px;
             width: 330px;
@@ -229,7 +234,7 @@
             border: 6px solid #000;
         }
 
-        .cavy .face-middle {
+        .face-middle {
             z-index: 1;
             position: absolute;
             top: 80px;
@@ -240,7 +245,7 @@
             background-color: #fffefb;
         }
 
-        .cavy .face-left,.face-right {
+        .face-left,.face-right {
             z-index: 2;
             top: 50px;
             position: absolute;
@@ -249,7 +254,7 @@
             border: 4px solid #000;
             background-color: #c1965e;
         }
-        .cavy .face-right {
+        .face-right {
             left: 110px;
             width: 115px;
             height: 214px; 
@@ -257,14 +262,14 @@
             border-radius: 89% 11% 56% 44% / 66% 68% 32% 34%         ;           
         }
 
-        .cavy .face-left {
+        .face-left {
             right: 110px;
             transform: rotate(-27deg);
             border-radius: 48% 52% 55% 45% / 71% 49% 51% 29%  ;
             background-color: #4e3a20;             
         }
 
-        .cavy .eye {
+        .eye {
             z-index: 2;
             position: absolute;
             top: 130px;
@@ -288,10 +293,10 @@
         .eye .left-twinkle, .right-twinkle {
             z-index: 3;
             top: 6px;
-            left: 6px;
+            left: 7px;
             position: absolute;
-            width: 4px;
-            height: 4px;
+            width: 4.5px;
+            height: 5px;
             border-radius: 50%;
             background-color: white;
         }
@@ -415,19 +420,19 @@
             
         }
 
-        .flower {
+        .carrot {
             z-index: 2;
             position: absolute;
             height: 55px;
             width: 130px;
-            left: 176px;
+            left: 171px;
             top: 18px;
             background-color: rgb(255, 110, 53);
             border-radius: 88% 51% 32% 72% / 100% 60% 50% 44%    ;
             border: 5px solid black;
         }
 
-        .flower1,.flower2,.flower3 {
+        .carrot1,.carrot2,.carrot3 {
             position: absolute;
             left: 115px;
             top: 2px;
@@ -436,18 +441,18 @@
             width: 40px;
             border-radius: 52% 47% 32% 53% / 64% 60% 42% 36% ;
             background-color: green;
-            border: 5px solid black;
+            border: 4px solid black;
         }
-        .flower2{
+        .carrot2{
             top: 12px;
             transform: rotate(0deg);
         }
-        .flower3{
+        .carrot3{
             top: 22px;
             transform: rotate(12deg);
 
         }
-        .flower4,.flower5 {
+        .carrot4,.carrot5 {
             position: absolute;
             width: 4px;
             height: 30px;
@@ -457,18 +462,83 @@
             border-radius: 30%;
             transform: rotate(7deg);
         }
-        .flower5 {
+        .carrot5 {
             left: 78px;
             height: 25px;
             top: -15px;
             transform: rotate(3deg);
         }
 
+        /* rabbit */
+        .rabbit {
+            position: relative;
+            background-color: transparent;
+            top: 100px;
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+        }
+
+        .rabbit .ear {
+            position: absolute;
+            top: -120px;
+            width: 95px;
+            height: 235px;
+            border: 6px solid #000;
+            background-color: #696969;
+        }
+        .rabbit .ear.left {
+            left: 135px;
+            transform: rotate(-5deg);
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%     ;
+            animation: 토끼귀왼쪽 1.2s infinite alternate;
+        }
+
+        .rabbit .ear.right {
+            right: 135px;
+            transform: rotate(5deg);
+            border-radius: 100% 64% 42% 42% /  79% 81%  33% 38%   ;
+            animation: 토끼귀오른쪽 1.2s infinite alternate;
+        }
+
+        .rabbit .face-right {           
+            background-color: #999999;  
+        }
+
+        .rabbit .face-left {
+            background-color: #525252;             
+        }
+
+        .rabbit .earline {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            width: 50px;
+            height: 170px;
+            border: 4px solid #000;
+            border-radius: 30%;
+            transform: rotate(2deg);
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%   ;
+            border-bottom: none;
+            background-color:  #ffeef9;
+            }
+        .rabbit .earline.left {
+            border-left: none;
+            border-radius: 64% 100% 42% 42% / 81% 79% 38% 33%   ;
+        }
+
+        .rabbit .earline.right {
+            border-radius: 100% 64% 42% 42% /  79% 81%  33% 38% ;
+            border-right: none;
+            left: 13px;
+            }
+
 
     </style>
 </head>
 <body>
-    <h1 class="name">HTML & CSS로 <br>기니피그 그리기 ❤️</h1>
+    <h1 class="name">당근을 좋아하는 칭구들</h1>
+    <div class="wrap">
     <div class="cavy">
         <div class="ear left">
             <div class="earline left"></div>
@@ -504,14 +574,60 @@
                 <div class="whisker left2"></div>
                 <div class="whisker left3"></div>
             </div>
-            <div class="flower">
-                <div class="flower1"></div>
-                <div class="flower2"></div>
-                <div class="flower3"></div>
-                <div class="flower4"></div>
-                <div class="flower5"></div>       
+            <div class="carrot">
+                <div class="carrot1"></div>
+                <div class="carrot2"></div>
+                <div class="carrot3"></div>
+                <div class="carrot4"></div>
+                <div class="carrot5"></div>       
             </div>
         </div>
     </div>
+    <div class="rabbit">
+        <div class="ear left">
+            <div class="earline left"></div>
+        </div>
+        <div class="ear right">
+            <div class="earline right"></div>
+        </div>
+        <div class="wrap-face">
+            <div class="face-right"></div>
+            <div class="face-left"></div>
+            <div class="face-middle"></div>
+            <div class="face-bottom"></div>
+            <div class="face-top">
+                <div class="eye left">
+                    <div class="left-twinkle"></div>
+                </div>
+                <div class="eye right">
+                    <div class="right-twinkle"></div>
+                </div>
+                <div class="nose">
+                    <div class="nose-left"></div>
+                    <div class="nose-right"></div>
+                    <div class="mouth-left"></div>
+                    <div class="mouth-right"></div>
+                    <div class="mouth-bottom"></div>
+                </div>
+            </div>
+            <div>
+                <div class="whisker right1"></div>
+                <div class="whisker right2"></div>
+                <div class="whisker right3"></div>
+                <div class="whisker left1"></div>
+                <div class="whisker left2"></div>
+                <div class="whisker left3"></div>
+            </div>
+            <div class="carrot">
+                <div class="carrot1"></div>
+                <div class="carrot2"></div>
+                <div class="carrot3"></div>
+                <div class="carrot4"></div>
+                <div class="carrot5"></div>       
+            </div>
+        </div>
+    </div>
+    <h2>기니피그 💜 토끼</h2>
+</div>
 </body>
 </html>
