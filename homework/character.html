@@ -25,6 +25,101 @@
             }
         }
 
+        @keyframes 입 {
+            from {
+
+            }
+            to {
+                height: 0px;
+                background-color: transparent;   
+            }
+        }
+
+        @keyframes 콧구멍 {
+            from {
+
+            }
+            to {
+                width: 4px;
+            }
+        }
+
+        @keyframes 오른쪽수염1 {
+            from {
+                
+            }
+            to { transform: rotate(5deg);
+
+            }
+            
+        }
+
+        @keyframes 오른쪽수염2 {
+            from {
+                
+            }
+            to { transform: rotate(-10deg);
+
+            }
+            
+        }
+        @keyframes 오른쪽수염3 {
+            from {
+                
+            }
+            to { transform: rotate(-25deg);
+
+            }
+            
+        }
+        @keyframes 왼쪽수염1 {
+            from {
+                
+            }
+            to { transform: rotate(-5deg);
+
+            }
+            
+        }
+
+        @keyframes 왼쪽수염2 {
+            from {
+                
+            }
+            to { transform: rotate(10deg);
+
+            }
+            
+        }
+        @keyframes 왼쪽수염3 {
+            from {
+                
+            }
+            to { transform: rotate(25deg);
+
+            }
+            
+        }
+    
+        /* .whisker.right1{
+            transform: rotate(10deg);
+            width: 120px;
+            left: 70px;
+        }
+        .whisker.right2{
+            top: 280px;
+            left: 50px;
+            transform: rotate(-4deg);
+        }
+        .whisker.right3{
+            top: 310px;
+            transform: rotate(-20deg);
+            left: 90px;
+            width: 110px;
+            
+        } */
+
+
         /* reset */
         body{
             margin: 0;
@@ -43,7 +138,7 @@
         }
 
         .name {
-            margin-top: 200px;
+            margin: 150px 0 0 0;
             color: white;
             font-size: 60px;
             text-align: center;
@@ -53,9 +148,8 @@
         .cavy {
             position: relative;
             background-color: transparent;
-            /* border: 5px solid rgb(149, 156, 255); */
             top: 100px;
-            margin: 50px auto;
+            margin:  auto;
             width: 500px;
             height: 500px;
         }
@@ -89,27 +183,29 @@
 
         .cavy .earline.left {
 
-                        position: absolute;
-            top: 45px;
-            left: 20px;
+            position: absolute;
+            top: 35px;
+            left: 23px;
             width: 60px;
-            background-color: #000;
+            height: 40px;
             border: 3px solid #000;
             border-radius: 30%;
             transform: rotate(80deg);
-            border-radius: 60% 0 0 10%;
+            border-radius: 70% 0 0 16%;
+            border-bottom: none;
         }
 
         .cavy .earline.right {
             position: absolute;
-            top: 45px;
-            right: 20;
+            top: 38px;
+            right: 25px;
             width: 60px;
-            background-color: #000;
+            height: 40px;
             border: 3px solid #000;
             border-radius: 30%;
-            transform: rotate(105deg);
-            border-radius: 10% 0 0 60%;
+            transform: rotate(80deg);
+            border-radius: 16% 0 0 70%;
+            border-top: none;
         } 
 
         .cavy .face-top {
@@ -215,19 +311,20 @@
             z-index: 2;
             position: absolute;
             top: 10px;
-            width: 2px;
+            width: 3px;
             height: 7px;
             border-radius: 50%;
             background-color: #000;
+            animation: 콧구멍 1s infinite alternate;
         }
 
         .nose-left{
             transform: rotate(-25deg);
-            left: 12px
+            left: 13px
 
         }
         .nose-right {
-            right: 14px;
+            right: 13px;
             transform: rotate(25deg);
         }
 
@@ -255,13 +352,14 @@
         .mouth-bottom{
             position: absolute;
             z-index: 2;
-            bottom: -9px;
-            left: 13px;
+            top: 32px;
+            left: 11px;
             background-color: #CE705F;
-            width: 13px;
-            height: 17px;
+            width: 18px;
+            height: 20px;
             border-radius:52% 48% 49% 51% / 69% 71% 29% 31%  ;
-        }
+            animation: 입 1.2s infinite alternate;
+                }
 
         .whisker{
             position: absolute;
@@ -280,35 +378,90 @@
             transform: rotate(10deg);
             width: 120px;
             left: 70px;
+            animation: 오른쪽수염1 1s infinite alternate;
         }
         .whisker.right2{
             top: 280px;
             left: 50px;
             transform: rotate(-4deg);
+            animation: 오른쪽수염2 0.9s infinite alternate;
         }
         .whisker.right3{
             top: 310px;
             transform: rotate(-20deg);
             left: 90px;
             width: 110px;
+            animation: 오른쪽수염3 1s infinite alternate;
             
         }
         .whisker.left1{
             transform: rotate(-10deg);
             width: 120px;
             right: 70px;
+            animation: 왼쪽수염1 0.9s infinite alternate;
         }
         .whisker.left2{
             top: 280px;
             right: 50px;
             transform: rotate(4deg);
+            animation: 왼쪽수염2 1s infinite alternate;
         }
         .whisker.left3{
             top: 310px;
             transform: rotate(20deg);
             right: 90px;
             width: 110px;
+            animation: 왼쪽수염3 0.9s infinite alternate;
             
+        }
+
+        .flower {
+            z-index: 2;
+            position: absolute;
+            height: 55px;
+            width: 130px;
+            left: 176px;
+            top: 18px;
+            background-color: rgb(255, 110, 53);
+            border-radius: 88% 51% 32% 72% / 100% 60% 50% 44%    ;
+            border: 5px solid black;
+        }
+
+        .flower1,.flower2,.flower3 {
+            position: absolute;
+            left: 115px;
+            top: 2px;
+            height: 15px;
+            transform: rotate(-10deg);
+            width: 40px;
+            border-radius: 52% 47% 32% 53% / 64% 60% 42% 36% ;
+            background-color: green;
+            border: 5px solid black;
+        }
+        .flower2{
+            top: 12px;
+            transform: rotate(0deg);
+        }
+        .flower3{
+            top: 22px;
+            transform: rotate(12deg);
+
+        }
+        .flower4,.flower5 {
+            position: absolute;
+            width: 4px;
+            height: 30px;
+            top: -18px;
+            left: 90px;
+            background-color: #000;
+            border-radius: 30%;
+            transform: rotate(7deg);
+        }
+        .flower5 {
+            left: 78px;
+            height: 25px;
+            top: -15px;
+            transform: rotate(3deg);
         }
 
 
@@ -351,9 +504,14 @@
                 <div class="whisker left2"></div>
                 <div class="whisker left3"></div>
             </div>
+            <div class="flower">
+                <div class="flower1"></div>
+                <div class="flower2"></div>
+                <div class="flower3"></div>
+                <div class="flower4"></div>
+                <div class="flower5"></div>       
+            </div>
         </div>
-
-
     </div>
 </body>
 </html>
