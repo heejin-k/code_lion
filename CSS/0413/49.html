@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+        #jun::before{
+            content: '!!';
+        }
+        #jun::after{
+            content: ' cm';
+        }
+
+        .one{
+            position: relative;
+            border: 5px solid blue;
+        }
+
+        span{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            content: '';
+            display: block; 
+            /* 인라인이라 블락을 줌 */
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .one::before{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            content: '';
+            display: block; 
+            /* 인라인이라 블락을 줌 */
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+
+        .one::after{
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p id="jun">10</p>
+    <p class="one">hello<span>world</span></p>
+</body>
+</html>

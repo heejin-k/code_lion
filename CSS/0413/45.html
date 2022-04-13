@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        foo:nth-child(1){
+            color: red;
+        }
+        foo:nth-child(2){
+            color: red;
+        }
+        foo:nth-child(3){
+            color: red;
+        }
+
+        foo:nth-child(2n+1){
+            color: rgb(98, 0, 255);
+        }
+
+        foo:nth-child(odd){
+            color: rgb(0, 38, 255);
+        }
+    </style>0
+</head>
+<body>
+    <ul>
+        <li class="foo">1</li>    
+        <li class="foo">2</li>    
+        <li class="foo">3</li>    
+        <li class="foo">4</li>
+        <li class="foo">5</li>
+    </ul>
+</body>
+</html>
