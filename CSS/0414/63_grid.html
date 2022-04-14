@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+.container {
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: 50% 25% 25%; */
+            /* grid-template-columns: 25% 25% 25% 25%; 
+                = grid-template-columns: repeat(4, 25%); */
+            /* fr은 fraction(분수, 일부) */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: repeat(2, 100%); */
+            /* grid-template-columns: 100px 1fr 1fr; */
+            /* gap: 10px 20px; */
+            /* 여백 ie에서는 사용불가 사용안해야함 */
+            /* grid-template-rows: 100px 200px 100px; */
+            justify-items: center;
+            align-items: center;
+            grid-auto-rows: minmax(300px, auto);
+        }
+    .item{
+        background-color: pink;
+        border: solid 1px black;
+            }
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+</div>
+</body>
+</html>

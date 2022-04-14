@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+        }
+
+        li {
+            /* width,height값을 무시하고 부모의 영역 모두 차지 */
+            /* flex-grow: 1;             */
+            /* width,height값대로 그려지지만 줄었을때 브라우저의 크기가 전체 넓이보다 줄어든다면 li크기도 줄어든다*/
+            /* flex-grow: 0;  */
+            /* flex-basis : 플렉스 아이템의 초기크기
+            초기크기가0이면 지정된게 없어서 동일하게 줄 수 있다 */
+            /* width 100px을 강제하지않는다 */
+            flex-basis: 100px;
+            box-sizing: border-box;
+            width: 100px;
+            height: 50px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li>1 aaa</li>
+        <li>2 bb</li>
+        <li>3 cccccccccccccccccc</li>
+        <li>4 dd</li>
+        <li>5 e</li>
+        <li>6 f</li>
+        <li>1 aaa</li>
+        <li>2 bb</li>
+        <li>3 cccccccccccccccccc</li>
+        <li>4 dd</li>
+        <li>5 e</li>
+        <li>6 f</li>
+    </ul>
+</body>
+</html>

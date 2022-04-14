@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            /* flex-wrap: wrap; */
+        }
+
+        li {
+            flex-grow: 1;
+            flex-basis: auto;
+            /* 넓이! 여백이 균등 */
+            /* flex fles-basis:0; 본연의 넓이 균등*/
+            box-sizing: border-box;
+            height: 50px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        /* li:nth-child(2) {
+            flex-grow: 2;
+        } */
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li>1 ccccccccccc</li>
+        <li>2</li>
+        <li>3</li>
+
+    </ul>
+</body>
+</html>
