@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>jquery기초</h2>
+    <textarea id="content">jksdfjasdfjlk</textarea>
+    <h2>익명함수</h2>
+    <button id="click">클릭</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        console.log($('#content').val());
+        $('#click').click(function(){console.log('hello');
+    });
+    </script>
+</body>
+</html>
