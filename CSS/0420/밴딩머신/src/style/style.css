@@ -184,21 +184,21 @@ body {
 }
 
 .list-item-staged .img-item,
-.list-item-staged .txt-item{
+.list-item-staged .txt-item {
     float: left;
 }
 
-.list-item-staged .img-item{
+.list-item-staged .img-item {
     width: 18px;
 }
 
-.list-item-staged .txt-itme{
+.list-item-staged .txt-item {
     margin-left: 10px;
     line-height: 33px;
     font-size: 9px;
 }
 
-.list-item-staged .num-counter{
+.list-item-staged .num-counter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,23 +209,23 @@ body {
     float: right;
 }
 
-#app .my-info{
+#app .my-info {
     background-color: #EAE8FE;
 }
 
-.my-info .cont-mymoney{
+.my-info .cont-mymoney {
     padding: 9px 27px;
     background-color: #fff;
 }
 
-.cont-mymoney .info-mymoney{
+.cont-mymoney .info-mymoney {
     padding: 6px 10px;
     line-height: 20px;
-    background-repeat: #eae8fe;
+    background-color: #EAE8FE;
     border-radius: 5px;
 }
 
-.cont-mymoney .txt-mymoney{
+.cont-mymoney .txt-mymoney {
     float: right;
     font-weight: 700;
 }
@@ -234,10 +234,9 @@ body {
     margin-top: 20px;
     padding: 25px 27px 32px;
     background-color: #fff;
-
 }
 
-.cont-myitems .tit-myitem{
+.cont-myitems .tit-myitem {
     display: block;
     text-align: center;
     margin-bottom: 13px;
@@ -245,9 +244,9 @@ body {
     font-weight: 700;
 }
 
-.cont-myitems .list-item-staged{
+.cont-myitems .list-item-staged {
     height: 364px;
-    overflow-y:scroll;
+    overflow-y: scroll;
     padding: 12px;
     background-color: #EAE8FE;
     border: 1px solid #BDBDBD;
@@ -255,7 +254,7 @@ body {
     border-radius: 5px;
 }
 
-.cont-myitems .txt-total{
+.cont-myitems .txt-total {
     display: block;
     text-align: right;
     font-size: 12px;
