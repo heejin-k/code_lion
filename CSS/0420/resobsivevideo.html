@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 비디오</title>
+    <style>
+        /* video{
+            width: 100%;
+            max-width: 100%;
+            이미지랑 같다
+        } */
+        body{
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .cont-video{
+            position: relative;
+            padding-top: 56.25%;
+            /* padding-top,bottom은 부모의 넓이에 비례한다 
+            넓이와 높이의 비율을 맞춰주기 위해서 */
+            /* height: 56.25vw; 해도 똑같다. */
+        }
+        .video-next-level{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <video autoplay controls loop muted src="./nextlevel.mp4"></video> -->
+    <!-- 비디오 파일 : 넓이는 퍼센트, 높이는 뷰포트 사용한다. -->
+
+    <!-- 유튜브 아이프레임 넣기 -->
+    <article class="cont-video">    
+        <iframe class="video-next-level"
+        src="https://www.youtube.com/embed/4TWR90KJl84?autoplay=1&mute=1&loop=1&playlist=4TWR90KJl84&controls=1"
+        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </article>
+
+</body>
+</html>
