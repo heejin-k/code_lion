@@ -1,0 +1,25 @@
+// 한 줄 주석입니다. css파일에서는 사라집니다
+/* 두 줄 주석입니다.*/ 
+ul{
+    li{
+        color: rebeccapurple;
+        font-size: 10px;
+    }
+}
+
+.one{
+    color: red;
+    .two{
+        color: aqua;
+    }
+    .three{
+        color: blue;
+    }
+}
+
+.two{
+    color: aqua;
+}
+.three{
+    color: blue;
+}

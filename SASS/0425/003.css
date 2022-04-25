@@ -1,0 +1,25 @@
+.box-yellow {
+  background: #ff6347;
+}
+
+.box-red {
+  background: #ffd700;
+}
+
+.box-green {
+  background: #9acd32;
+}
+
+/* at-root*/
+.one {
+  color: red;
+}
+
+.one .two {
+  color: blue;
+}
+
+.three {
+  color: green;
+}
+/*# sourceMappingURL=003.css.map */

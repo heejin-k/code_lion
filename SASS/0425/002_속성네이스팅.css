@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.add-icon {
+  background-image: url("./assets/arrow-right-solid.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+
+/* 부모선택자 엠퍼센트 */
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.box:hover {
+  background-color: green;
+}
+
+ul li:hover {
+  background: white;
+  cursor: pointer;
+}
+
+ul li:last-child {
+  border-bottom: 2px solid black;
+}
+
+ol li:nth-child(1) {
+  color: red;
+}
+
+ol li:nth-child(2) {
+  color: aqua;
+}
+
+ol li:nth-child(3) {
+  color: blue;
+}
+/*# sourceMappingURL=002_속성네이스팅.css.map */

@@ -1,0 +1,20 @@
+@mixin box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    @include box;
+    background-color: red;
+}
+
+@mixin box2($color) {
+    background-color: $color;
+    width: 100px;
+    height: 100px;
+}
+
+.card_ {
+    @include box2(red);
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAA;EACA,KAAK,EALE,GAAG;CAMb;;AAED,AAAA,IAAI,CAAA;EACA,KAAK,EARE,IAAI;CASd;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAdE,OAAO;CAejB",
+    "sources": [
+        "004변수선언.scss"
+    ],
+    "names": [],
+    "file": "004변수선언.css"
+}
