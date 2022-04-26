@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,EAAE,CAAA;EACE,SAAS,EAJK,IAAI;EAKlB,WAAW,EAJwB,GAAG;CAKzC",
+    "sources": [
+        "22.scss"
+    ],
+    "names": [],
+    "file": "22.css"
+}

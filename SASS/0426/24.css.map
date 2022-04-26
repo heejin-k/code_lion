@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKI,AAAA,IAAI,CAAA;EAJJ,KAAK,EAKmB,KAAK;EAJ7B,MAAM,EAIwB,IAAI;EAHlC,aAAa,EAAE,GAAG;CAIjB",
+    "sources": [
+        "24.scss"
+    ],
+    "names": [],
+    "file": "24.css"
+}
