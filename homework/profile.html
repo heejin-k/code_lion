@@ -4,124 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>custom</title>
+    <title>이력서 김희진</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="h-20 p-3 bg-red-300">
-        <h1 class="font-bold tracking-widest text-white text-5xl float-left ml-16">HEEJIN</h1>
+    <header class="h-72 p-3 bg-red-300">
+        <h1 class="font-bold tracking-widest text-white text-6xl float-left m-7 ml-10">HEEJIN🐰</h1>
         <ul class="float-right text-white text-lg mt-2.5 ">
-        <li class="mr-10 inline "><a href="#">profile</a></li>
-        <li class="mr-10 inline"><a href="#">asddd</a></li>
-        <li class="mr-10 inline"><a href="#">Major</a></li>
-        <li class="mr-10 inline"><a href="#">Hobby</a></li>
-        <li class="mr-10 inline"><a href="#">Friends</a></li>
+        <li class="mr-10 inline "><a href="#aboutme">INTRO</a></li>
+        <li class="mr-10 inline"><a href="#experience">EXPERIENCE</a></li>
+        <li class="mr-10 inline"><a href="#skill">SKILL SET</a></li>
+        <li class="mr-10 inline"><a href="#project">PROJECT</a></li>
+        <li class="mr-10 inline"><a href="#future">
+            FUTURE PROJECT</a></li>
+    
         </ul>
+        <div class="w-4/5 my-0 mx-auto ">
+            <strong class=" block text-right italic text-white text-5xl mt-52 ">배움에 마침표는 없다.</strong>
+            <p class="float-right block text-right italic mt-10 text-4xl font-bold text-stone-600">끝없이 성장하는 개발자 <span class="text-stone-700 text-4xl ">김희진</span> 입니다.</p>
+            
+            <img class="block w-80 rounded-full m-10 -mt-28
+            float-left border-8 border-stone-100" src="./img/정사각형.jpg" alt="">
+        </div>
     </header>
-    <div class="w-5/6 my-0 mx-auto">
-        <div class="m-10 flex items-center justify-center overflow-hidden" id="profile">
-            <img class="w-80 rounded-full m-10
-            float-left" src="./img/정사각형.jpg" alt="">
-            <div class="w-3/4 h-80 m-10 float-right">
-                <h2 class="text-3xl border-b-4 border-red-300 pb-2 mb-2 text-gray-600 font-bold">about me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a deleniti voluptatem at optio nemo soluta incidunt illum? Aliquid ut, soluta quod totam aliquam incidunt iure odio possimus nobis magni.
-                </p>
-                <ul class="flex mt-5">
+    <div class="w-5/6 my-60 mx-auto">
+        <div class="flex justify-between ">
+            <div class="w-2/4 m-20">
+                <h2 id="experience" id="aboutme" class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">ABOUT ME</h2>
+                <p class="text-lg">일 평균 10커밋, 100일째 꾸준히 커밋중인 급속도로 성장 중인 주니어 프론트엔드 개발자 김희진입니다. <br> 2022년 2월 졸업 후 프론트엔드로 진로를 정하게 되어 남들에 비해 프로젝트가 많지 않지만 준비기간에 비례한 저의 성장 실력은 월등하다 자부할 수 있습니다. <Br>이러한 저의 프론트엔드에 대한 열정과 애정으로 마침표를 찍지 않고 끝없이 성장하는 프론트엔드 개발자로 여러분과 함께 하고싶습니다. </p>
+            </div>
+            <div class="w-2/4 m-20">
+                <h2 class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">SOCAIL</h2>
+                <ul class="list-disc ml-5">
                     <li>
+                        <dd class="inline-block font-bold text-gray-400 text-lg">e-mail </dd> 
+                        <dt class="inline-block font-bold text-gray-700"> absde1234@naver.com </dt>
                     </li>
                     <li>
-                        <a href="https://github.com/heejin-k"><img src="./icon/github.png" alt=""></a>
+                        <dd class="inline-block font-bold text-gray-400 text-lg">phone </dd> 
+                        <dt class="inline-block font-bold text-gray-700"> 010-0000-0000 </dt>
                     </li>
-                    <li>
-                        <a href="https://velog.io/@heejin-k"><img class="w-12 ml-2" src="./icon/blog.png" alt=""></a>
+                    <li class="flex mt-5"> 
+                        <a class="mr-5" href="https://github.com/heejin-k"><img class="w-10" src="./icon/github.png" alt="">github</a>
+                        <a href="https://velog.io/@heejin-k"><img class="w-10" src="./icon/blog.png" alt="">velog</a> 
                     </li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="m-20 justify-center">
-            <h3 class="text-3xl border-b-4 border-red-300 pb-2 mb-2 text-gray-600 font-bold">EXPERIENCE</h3>
+            <h2 id="experience" class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">EXPERIENCE</h2>
             <ul class="list-disc ml-5">
-                <li>
+                <li class="mb-2">
                     <dd class="inline-block font-bold text-gray-400 text-lg">2018 ~ 2022</dd> 
-                    <dt class="inline-block font-bold text-gray-700">GNU Computer Science</dt>
+                    <dt class="inline-block font-bold text-gray-700 text-lg">GNU Computer Science</dt>
                     <p>- 2019 ~ 2022 : Programming Language lab </p>  
                     <p>- 2021 보람 CS 학생회 학우부장</p>
                 </li>
-                <li>
+                <li class="mb-2">
                     <dd class="inline-block font-bold text-gray-400 text-lg">2018 ~ 2020</dd> 
-                    <dt class="inline-block font-bold text-gray-700">CAFE Part-Timer</dt>
+                    <dt class="inline-block font-bold text-gray-700 text-lg">CAFE Part-Timer</dt>
                 </li>
-                <li> 
+                <li class="mb-2"> 
                     <dd class="inline-block font-bold text-gray-400 text-lg">2020 ~ 2022</dd> 
-                    <dt class="inline-block font-bold text-gray-700">SPAO STEP</dt> 
+                    <dt class="inline-block font-bold text-gray-700 text-lg">SPAO STEP</dt> 
                 </li>
-                <li>
+                <li class="mb-2">
                     <dd class="inline-block font-bold text-gray-400 text-lg">2022 ~ ing </dd> 
-                    <dt class="inline-block font-bold text-gray-700"> 멋쟁이 사자처럼 Front-end school 수료 </dt>
+                    <dt class="inline-block font-bold text-gray-700 text-lg"> 멋쟁이 사자처럼 Front-end school 수료 </dt>
                     <p>- 웹 캐릭터 경진대회 최우수상 수상 </p>   
                 </li>
             </ul>
         </div>
 
+
         <div class="m-20 justify-center">
-            <h3 class="text-3xl border-b-4 border-red-300 pb-2 mb-2 text-gray-600 font-bold">SKILL SET</h3>
-            <div class="flex"> 
+            <h2 id="skill" class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">SKILL SET</h2>
+            <div class="flex mt-5"> 
                 <p class="w-1/3 text-xl text-gray-600 font-bold text-center mb-3">Language</p>
-                <p class="w-1/3 text-xl text-gray-600 font-bold text-center">Framework</p>
+                <p class="w-1/3 text-xl text-gray-600 font-bold text-center">Framework & Library</p>
                 <p class="w-1/3 text-xl text-gray-600 font-bold text-center">Cooperation</p>
             </div>
-            <div class="flex">
-                <ul class="w-1/3 flex border-4 border-ston-200 rounded-2xl">
-                    <li><img src="./icon/html.png" alt=""></li>
-                    <li><img src="./icon/css3.png" alt=""></li>
-                    <li><img src="./icon/javascript.png" alt=""></li>
-                    <li><img class="w-12" src="./icon/python.png" alt=""></li>
+            <div class="flex gap-4">
+                <ul class="w-1/3 flex flex-col border-4 border-ston-200 rounded-2xl">
+                    <li class="m-4"><img src="./icon/html.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/css3.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/javascript.png" alt=""></li>
+                    <li class="m-4"><img class="w-12" src="./icon/python.png" alt=""></li>
                 </ul>
                 <br>
-                <ul class="w-1/3 flex border-4 border-ston-200 rounded-2xl">
-                    <li><img class="w-12" src="./icon/react.png" alt=""></li>
-                    <li><img src="./icon/sass.png" alt=""></li>
-                    <li><img src="./icon/bootstrap.png" alt=""></li>
-                    <li><img class="w-12 mt-2" src="./icon/tailwind.png" alt=""></li>
-                    <li><img class="w-12" src="./icon/vue.png" alt=""></li>
+                <ul class="w-1/3 flex flex-col border-4 border-ston-200 rounded-2xl">
+                    <li class="m-4"><img class="w-12" src="./icon/react.png" alt=""></li>
+                    <li class="m-4"><img class="w-12" src="./icon/jquery.png" alt=""></li>
+                    <li class="m-4"><img class="w-12" src="./icon/vue.png" alt=""></li>
+                    <li class="m-4"><img class="w-12 mt-2" src="./icon/tailwind.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/sass.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/bootstrap.png" alt=""></li>
                 </ul>
                 <br>
-                <ul class="w-1/3 flex border-4 border-ston-200 rounded-2xl">
-                    <li><img class="w-12" src="./icon/git.png" alt=""></li>
-                    <li><img src="./icon/github.png" alt=""></li>
-                    <li><img src="./icon/notion.png" alt=""></li>
+                <ul class="w-1/3 flex flex-col border-4 border-ston-200 rounded-2xl">
+                    <li class="m-4"><img class="w-14" src="./icon/git.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/github.png" alt=""></li>
+                    <li class="m-4"><img src="./icon/notion.png" alt=""></li>
                 </ul>
             </div>
         </div>
 
 
         <div class="m-20 justify-center">
-            <h3 class="text-3xl border-b-4 border-red-300 pb-2 mb-2 text-gray-600 font-bold">PROJECT</h3>
-            <ul>
-                <li>
-                    vending machine
-                </li>
-                <li>
-                    cherry marcket
-                </li>
-                <li>
-                    1만시간의 법칙
-                </li>
-                <li>
-                    mbti
-                </li>
-
-            </ul>
+            <h2 id="project" class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">PROJECT</h2>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/감귤.png" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">감귤 마켓</strong>
+                    <p class="text-lg">html, css , js ,react를 사용하여 구현한 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta laborum neque quidem, omnis accusamus modi voluptatibus qui id optio beatae voluptates praesentium iusto repellendus illum culpa excepturi quasi eligendi! Voluptatibus!</p>
+                </div>
+            </div>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/랜딩.png" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">랜딩 페이지</strong>
+                    <p class="text-lg">html, css , js를 사용하여 구현한 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto. </p>
+                </div>
+            </div>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/vending.png" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">coffee machine</strong>
+                    <p class="text-lg">html, css , js를 사용하여 구현한 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum, excepturi quisquam ea at soluta rerum, dicta eaque exercitationem mollitia dolores accusamus minima. Unde fuga recusandae nostrum optio placeat consequuntur. </p>
+                </div>
+            </div>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/영화목록.png" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">정글시네마 영화예매</strong>
+                    <p class="text-lg">html, sass , js를 사용하여 구현한 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto. </p>
+                </div>
+            </div>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/10000.png" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">1만시간의 법칙</strong>
+                    <p class="text-lg">html, css , js를 사용하여 구현한 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti provident ut nihil blanditiis dolore dolores enim quia delectus inventore? Pariatur dolor vitae velit tempore itaque cumque. Alias, ipsum praesentium. </p>
+                </div>
+            </div>
+            
         </div>
         <div class="m-20 justify-center">
-            <h3 class="text-3xl border-b-4 border-red-300 pb-2 mb-2 text-gray-600 font-bold">AFTER PROJECT</h3>
-            <p> - vending machine
-                - cherry marcket
-                - 1만시간의 법칙 
-                - mbti
-                - cafe
-            </p>
+            <h2 id="future" class="text-3xl border-b-4 border-red-300 pb-2 mb-5 text-gray-600 font-bold">FUTURE PROJECT</h2>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/임시.jpg" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">추천 웹 페이지</strong>
+                    <p class="text-lg">
+                        <!-- 프로젝트 개요 : 2018 ~ 2020년 2년동안 아르바이트를 하면서... <br>음료를 고르지못해서 한참 서계시는 분들을 많이 목격하였습니다. 매장에 음료를 추천해주는 어플이 있으면 좋겠다는 생각에 위 내용으로 2020년 학과 프로젝트로 안드로이드 앱 개발을 진행하였으나 실제 원활히 사용할 수준으로 개발이 완료되지않아 웹으로 다시 구현하기위해 설계중입니다. <br> 프로젝트 목표 : 고객이 보다 원활하게 음료를 선택함으로 인한 고객과 매장의 운영시간 단축 및 CS 만족도 상승 <br> -->
+                        프로젝트 설계 : <br> 1. 구현 환경 : html, css , js, react <br> 2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto
+                    </p>
+                </div>
+            </div>
+            <div class="overflow-hidden mb-5">
+                <img class="float-left w-1/2" src="./img/임시.jpg" alt="">
+                <div class="float-right w-1/2 pl-5">
+                    <strong class="text-2xl">매칭 웹페이지</strong>
+                    <p class="text-lg"> - 프로젝트 개요 : 2021년 학과 학생회에서 학우부장을 맡아 운영하면서 ... 
+                        <!-- <br>코로나로 인한 선후배간의 교류가 줄어드는 것이 안타까웠습니다. 그로 인해 학과 내 단짝 프로그램을 추진하여 만족도를 얻어냈던 경험이 있습니다. 그러나 매칭하는 과정에서 학우들의 wish를 모두 들어주는 구성을 하는것이 어려웠으며 지역이 멀어 참여하지 못하는 학우들 또한 많았습니다. 비대면으로도 학우들이 손쉽게 즐기며 단짝 매칭 시스템을 자동화 하기 위해 웹페이지 설계 구상중입니다. <br>  -->
+                        - 프로젝트 목표 : 학우들이 ... <br> - 프로젝트 설계 : html, css , js를 사용하여 구현 예정인 프로젝트로, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam illo praesentium quae porro asperiores exercitationem placeat repudiandae consequatur unde, iste mollitia, qui id voluptatum ea, amet non earum architecto. </p>
+                </div>
         </div>
     </div>
 </body>
