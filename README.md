@@ -5,6 +5,7 @@
 - 2022.03.28 ~ ing
 - studying from 9am to 6pm
 - 구현 결과물 페이지 링크 <br>
+  🐰 [profile](https://heejin-k.github.io/code_lion/homework/profile.html)<br>
   📋 [To Do List](https://heejin-k.github.io/code_lion/homework/bucketlist.html) <br>
   🔒 [Login & Signup page](https://heejin-k.github.io/code_lion/homework/login.html) <br>
   🗓️ [Calender](https://heejin-k.github.io/code_lion/homework/calender.html) <br>
