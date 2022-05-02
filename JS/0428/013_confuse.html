@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write(`1. ${'0' == 0}<br>`);
+        document.write(`2. ${'0' === 0}<br>`);
+        document.write(`3. ${false == 0}<br>`);
+        document.write(`4. ${false === 0}<br>`);
+        document.write(`5. ${true == 1}<br>`);
+        document.write(`6. ${false == '0'}<br>`);
+        document.write(`7. ${false == 'false'}<br>`);
+        document.write(`8. ${0 == ''}<br>`); //주의
+        document.write(`9. ${false == ''}<br>`); //주의
+        document.write(`10. ${false == null}<br>`); //주의
+        document.write(`11. ${false == undefined}<br>`); //주의
+        document.write(`12. ${NaN == NaN}<br>`); //주의
+        document.write(`13. ${NaN === NaN}<br>`); //주의
+        document.write(`14. ${isNaN(undefined)}<br>`); //주의 t
+        document.write(`15. ${isNaN(null)}<br>`); //주의 f
+        document.write(`16. ${isNaN(NaN)}<br>`); //주의 t
+        //실무에서 isNaN사용하면 안됨
+        document.write(`17. ${Number.isNaN(undefined)}<br>`); // 넘버 안쓸땐 트루, 넘버쓰면 펄스
+        document.write(`18. ${Number.isNaN(null)}<br>`); //주의 f
+        document.write(`19. ${Number.isNaN(NaN)}<br>`); //이렇게 써야함
+
+        document.write(`20. ${!([])}<br>`); //주의 f
+        document.write(`21. ${!({})}<br>`); //주의 f
+
+
+        if ([]) {
+            document.write('hello');
+        }
+        if ({}) {
+            document.write('hello');
+        }
+        if (' ') {
+            document.write('hello');
+        }
+        //원래 프로그래밍 언어에서는 비운상태로 조건문이 안돌아가야 맞는데 자스는 가능하다... 근데 ' '이건 안됨 이상한 자스 ~
+
+
+        //느낌표 두개로 해결이 가능하다 
+
+        console.log('----------------');
+        console.log(`1 ${!!undefined}`);
+        console.log(`2 ${!!null}`);
+        console.log(`3 ${!!NaN}`);
+        console.log(`4 ${!!Infinity}`);
+        console.log(`5 ${!![]}`); // 주의
+        console.log(`6 ${!!{}}`); // 주의
+        console.log(`7 ${!!''}`); // 주의
+        console.log(`8 ${!!0}`);
+        console.log(`9 ${!!'hello world'}`);
+        console.log(`10 ${!!-100}`);
+
+        console.log('----------------');
+        console.log(`1 ${false == undefined}`);
+        console.log(`2 ${false == null}`);
+        console.log(`3 ${false == NaN}`);
+        console.log(`4 ${false == Infinity}`);
+        console.log(`5 ${false == []}`); // 주의
+        console.log(`6 ${false == {}}`); // 주의
+        console.log(`7 ${false == ''}`); // 주의
+        console.log(`8 ${false == 0}`);
+        console.log(`9 ${false == 'hello world'}`);
+        console.log(`10 ${false == -100}`);
+
+        console.log('----------------');
+        console.log('드모르간 법칙');
+        console.log(!(x || y) === (!x && !y))
+        console.log(!(x && y) === (!x && !y))
+
+        console.log(+false);
+        console.log(+true);
+        console.log(false * 1);
+        console.log(true * 1);
+
+    </script>
+</body>
+
+</html>

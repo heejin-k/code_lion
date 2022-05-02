@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리형</title>
+</head>
+
+<body>
+    <script>
+        let value1 = 30;
+        let value2 = 50;
+        console.log(value1 > value2);
+        console.log(value1 >= value2);
+        console.log(value1 < value2);
+        console.log(value1 <= value2);
+        console.log(value1 == value2);
+        console.log('--------------');
+        value1 = 30;
+        value2 = '30';
+        console.log(value1 == value2);//타입고려안함 t
+        console.log(value1 === value2); //타입까지 고려 f / 형변환 안해도돼서 속도 우위
+        console.log('--------------');
+        console.log(value1 != value2);
+        console.log(value1 !== value2);
+        console.log('--------------');
+        value1 = true;
+        value2 = false;
+        console.log(!value2);
+        console.log(!!value2); //많이사용
+    </script>
+</body>
+
+</html>

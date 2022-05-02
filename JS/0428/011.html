@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //문자열 (string)
+
+        let txt = "abcdefg";
+        let number = '100';
+        let txt2 = "mom said \'hello\'";
+        document.write(number + number, '<br>');
+        document.write(Number(number) + Number(number), '<br>');
+        document.write(parseInt(number) + parseInt(number), '<br>');
+        document.write(+number + +number, '<br>')
+        document.write(`text:${txt}`, '<br>');
+        document.write(`100+100=${parseInt(number) + parseInt(number)}`, '<br>');
+        document.write(`${number}+${number}=${number * 2}`, '<br>'); // 숫자계산됨
+
+        document.write(`txt.length: ${txt.length}`, '<br>');
+
+        // document.getElementsByTagName("video")[0].playbackRate = 4;
+        // //비디오 배속
+
+        document.write(txt.indexOf("b"), '<br>')
+        document.write(`txt.search("f"): ${txt.search("f")}`, '<br>')
+
+        document.write(`text[1]: ${txt[1]} <br>`)
+
+        document.write(number + 10, '<br>'); // 문자열 인식
+        document.write(number - 10, '<br>'); //숫자 인식
+        document.write(number * 10, '<br>'); //숫자인식
+        // * , -는 가능함,, ㅋㅋ 
+        document.write(0 + '', '<br>'); //문자열로 바뀜
+        document.write({} + '', '<br>');    //심각
+        document.write(({}) + '', '<br>');  //심각
+        document.write([] + '', '<br>');    //심각
+        document.write([1, 2, 3, 4] + '', '<br>');
+
+        document.write(txt.lastIndexOf("b"), '<br>');
+
+        document.write(`txt.slice(0,3) : ${txt.slice(0, 3)}`, '<br>')
+        //slice(시작 인덱스, 종료 인덱스) : 시작인덱스부터 종료인덱스 -1까지 반환한다.
+        //substr(시작위치, 길이):시작인덱스부터 길이만큼 반환한다
+
+        document.write('abcdef'.replace('cde', 'heejin')); //자주사용
+
+        let regExp2 = /cde/;
+        document.write('abcdef'.replace('cde', 'hhh'), '<br>');
+        document.write(txt.replace(/cde/g, 'hhh'), '<br>'); //정규표현식으로 글로벌하게 잡아줬그때문에 모든 cdg가 바뀜 정규표현식이랑 replace랑 같이 쓸 수 있다 정도로 알아두기 나중에 다시 배움
+
+        document.write('<br><hr><br>');
+
+        document.write(txt.includes('z'), '<br>');
+        document.write(txt.includes('bc'), '<br>');
+        // txt가 z,bc를 포함하냐? flase, true 로 반환
+        document.write(txt.startsWith('abd'), '<br>')
+        //abc로 시작하냐???
+
+
+    </script>
+</body>
+
+</html>
