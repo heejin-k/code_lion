@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var fish = ['정어리', '고등어', '돌고래', '참치', '고래상어', '코끼리'];
+        fish.splice(-1, 1)
+        fish.splice(4, 0, '다금바리')
+        fish.splice(2, 1, '옥돔', '갈치');
+
+        // 1. splice 를 이용해 코끼리를 제거해보세요
+        // 2. 참치 다음에 다금바리를 추가해보세요
+        // 3. 돌고래를 제거하고 옥돔과 갈치를 추가해보세요
+
+        var fish2 = ['정어리', '고등어', '돌고래', '참치', '고래상어', '코끼리'];
+        // 다음 배열에서 물고기가 아닌것을 slice로 선택해 콘솔로 출력해 보세요.
+        console.log(fish2.slice(2, 3) + fish2.slice(-1))
+
+        // 다음 배열에서 sort 함수를 이용해 원소의 product의 값을 기준으로 가나다순으로 정렬해보세요.
+
+        var studentList = [
+            {
+                id: 1, product: '연필', stock: 10
+            },
+            {
+                id: 2, product: '색종이', stock: 33
+            },
+            {
+                id: 3, product: '체육복', stock: 2
+            },
+            {
+                id: 4, product: '만연필', stock: 0
+            }
+        ]
+        console.log(studentList.sort(function (a, b) {
+            if (a.product < b.product) {
+                return -1
+            }
+            else if (a.product > b.product) {
+                return 1
+            }
+            else {
+                0
+            }
+        }))
+
+
+    </script>
+</body>
+
+</html>
