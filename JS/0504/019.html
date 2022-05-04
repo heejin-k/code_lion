@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const arr = [{
+            'name': 'title1',
+            'contents': 'contents1',
+            'dataNum': 1,
+            '지역과날짜': [
+                '한국',
+                [22, 5, 4],
+            ]
+        }, {
+            'name': 'title2',
+            'contents': 'contents2',
+            'dataNum': 2,
+            '지역과날짜': [
+                '한국',
+                [22, 5, 4],
+            ]
+        }, {
+            'name': 'title3',
+            'contents': 'contents3',
+            'dataNum': 3,
+            '지역과날짜': [
+                '한국',
+                [23, 5, 4],
+            ]
+        }, {
+            'name': 'title4',
+            'contents': 'contents4',
+            'dataNum': 4,
+            '지역과날짜': [
+                '한국',
+                [23, 5, 4],
+            ]
+        }, {
+            'name': 'title5',
+            'contents': 'contents5',
+            'dataNum': 5,
+            '지역과날짜': [
+                '한국',
+                [22, 5, 4],
+            ]
+        }];
+
+        console.log(arr.map(i => i['지역과날짜'][1][0]));
+        console.log(arr.map(i => i.지역과날짜[1][0]));
+
+        const arr2 = [1, 2, 4, 5, 16]
+        console.log(arr2.map(i => i ** 2))
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //오름차순
+        jsonData.sort((a, b) => (a[key] < b[key] ? -1 : (a[key] > b[key] ? 1 : 0)))
+        //내림차순
+        jsonData.sort((a, b) => (a[key] > b[key] ? -1 : (a[key] < b[key] ? 1 : 0)))
+
+
+        const cafe = ['coffee', 'cake', 'tea', 'cookie']
+        const count = cafe.unshift('bread');
+        // 앞에다 추가
+
+
+        const arr = [{
+            'name': '안녕1',
+            'contents': 'contents1',
+            'dataNum': 1
+        }, {
+            'name': '안녕2',
+            'contents': 'contents2',
+            'dataNum': 2
+        }, {
+            'name': 'title3',
+            'contents': 'contents3',
+            'dataNum': 3
+        }, {
+            'name': 'title4',
+            'contents': 'contents4',
+            'dataNum': 4
+        }, {
+            'name': 'title5',
+            'contents': 'contents5',
+            'dataNum': 5
+        }];
+
+        arr.filter(i => i.name.includs('안녕')) //2개
+
+        arr = [{
+            'name': '안녕1',
+            'contents': '프론트엔드1',
+            'dataNum': 1
+        }, {
+            'name': '프론트엔드2',
+            'contents': 'content2',
+            'dataNum': 2
+        }, {
+            'name': 'title3',
+            'contents': '프론트엔드3',
+            'dataNum': 3
+        }, {
+            'name': '안녕4',
+            'contents': 'contents4',
+            'dataNum': 4
+        }, {
+            'name': 'title5',
+            'contents': 'contents5',
+            'dataNum': 5
+        }];
+
+
+        arr.filter(i => i.name.includes('프론트엔드')) || (i => i.content.includes('프론트엔드')) //이름이나 내용에 프론트엔드 들어가는거 선택
+
+
+        const cafe2 = [{
+            'item': 'coffee',
+            'amount': 5
+        }, {
+            'item': 'cake',
+            'amount': 4
+        }, {
+            'item': 'tea',
+            'amount': 7
+        }, {
+            'item': 'cookie',
+            'amount': 3
+        }];
+
+        const index = cafe2.findIndex(obj => obj.item.length <= 3) //tea에서 멈추는데 tea가있는 위치 반환
+
+        const cafe3 = [{
+            'item': 'coffee',
+            'amount': 5
+        }, {
+            'item': 'cake',
+            'amount': 4
+        }, {
+            'item': 'tea',
+            'amount': 7
+        }, {
+            'item': 'cookie',
+            'amount': 3
+        }];
+
+        cafe3.findIndex(obj => obj.item.length <= 3)
+
+    </script>
+</body>
+
+</html>
