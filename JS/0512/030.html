@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div></div>
+
+    <strong class="sayHi">
+        반갑습니다.
+    </strong>
+
+    <script>
+        const sayHi = document.querySelector('.sayHi');
+        sayHi.insertAdjacentHTML('beforebegin', '<span>안녕하세요 저는</span>');
+        sayHi.insertAdjacentHTML('afterbegin', '<span>재현입니다</span>');
+        sayHi.insertAdjacentHTML('beforeend', '<span>면접오시면</span>');
+        sayHi.insertAdjacentHTML('afterend', '<span>치킨사드릴게요</span>');
+
+
+        //innerHTML
+
+        // const name = "John";
+        // // assuming 'el' is an HTML DOM element
+        // document.querySelector('div').innerHTML = name; // harmless in this case
+
+
+
+        // const name2 = "<script>alert('I am John in an annoying alert!')<\/script>";
+        // document.querySelector('div').innerHTML = name2; // harmless in this case 스크립트 태그는 실행안하게 돼있다.
+
+
+
+        // const name = "<img src='x' onerror='alert(1)'>";
+        // document.querySelector('div').innerHTML = name; // shows the alert
+        // 요소안에 자바스크립트를 넣으면 실행됨 이렇게하면 안된다 조심!
+
+
+    </script>
+
+</body>
+
+</html>
