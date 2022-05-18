@@ -1,0 +1,37 @@
+class Todo {
+    constructor(content) {
+        this.content = content;
+        this.state = false;
+    }
+
+    changeState() {
+        if (this.state == false) {
+            this.state = true
+        } else {
+            this.state = false
+        }
+
+    }
+}
+
+class TodoManager {
+    constructor() {
+        this.todoList = [];
+    }
+
+    additem(content) {
+        const todo = new Todo(content)
+        this.todoList.push(todo);
+    }
+    getitems() {
+        return this.todoList
+    }
+    getLeftTodoCount() {
+        return this.todoList.filter(todo => todo.state === false).length;
+    }
+}
+
+const todoManager = new TodoManager();
+
+
+
