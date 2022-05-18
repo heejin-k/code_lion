@@ -33,5 +33,14 @@ class TodoManager {
 
 const todoManager = new TodoManager();
 
+/*
+todoManager
+todoManager.additem('숙제하기')
+todoManager.additem('복습하기')
+todoManager.additem('프로젝트')
+todoManager.getitems();
+todoManager.getitems()[0].changeState();
+todoManager.getLeftTodoCount();
+*/
 
 
