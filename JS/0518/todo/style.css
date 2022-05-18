@@ -1,0 +1,108 @@
+/* reset */
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+ul,
+li,
+h2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* design */
+body {
+    background-color: #dddddd;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+
+section {
+    width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: left;
+    border-bottom: 4px solid #eeeeee;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ff1593;
+    padding: 20px 20px 10px 20px;
+}
+
+.list {
+    background-color: #f4f4f4;
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+
+.list li {
+    border: 4px solid #eeeeee;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    color: rgb(67, 67, 67);
+}
+
+.list li:hover {
+    border-color: #ff1593;
+    color: #ff1593;
+}
+
+.delete {
+    background-image: url(./image/delete.png);
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    float: right;
+    cursor: pointer;
+}
+
+.check {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.inputwrap {
+    text-align: center;
+}
+
+.inputlist {
+    width: 70%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 2px solid #cfcfcf;
+    box-sizing: border-box;
+}
+
+.inputlist::placeholder {
+    font-size: 12px;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+.add {
+    background-image: url(./image/add.png);
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

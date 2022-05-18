@@ -1,3 +1,8 @@
+const addlist = document.querySelector('.inputlist')
+const ullist = document.querySelector('.ullist')
+const addBtn = document.querySelector('.add')
+
+
 class Todo {
     constructor(content) {
         this.content = content;
@@ -33,6 +38,23 @@ class TodoManager {
 
 const todoManager = new TodoManager();
 
+const li = document.createElement('li');
+const input = document.createElement('input');
+const btn = document.createElement('button');
+const span = document.createElement('span');
+
+addBtn.addEventListener('click', function () {
+    ullist.appendChild(li, input, btn, span);
+    li.appendChild(input);
+    input.setAttribute('type', 'checkbox');
+    input.classList.add('check');
+    li.appendChild(btn);
+    btn.classList.add('delete');
+    li.appendChild(span);
+    span.textContent = addlist.value;
+})
+
+
 /*
 todoManager
 todoManager.additem('숙제하기')
@@ -42,3 +64,5 @@ todoManager.getitems();
 todoManager.getitems()[0].changeState();
 todoManager.getLeftTodoCount();
 */
+
+
