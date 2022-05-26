@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .full {
+            border: 1px solid red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: none;
+    }
+</style>
+
+<body>
+    <p id="text"></p>
+    <div id="divOne" class="box"></div>
+    <p class="textTwo"></p>
+    <h1></h1>
+
+    <script>
+        //JQuery - 요소 선택과 hide
+        $('#text').text('Hello');
+        $('#divOne').fadeIn(3000);
+        $('.textTwo').text('안녕하세요');
+        $('h1').text('WOW');
+
+        // div 클릭했을 때 안 보이게 하기
+        // $(function) => dom이 준비되면 function 실행해라!
+        $(function () {
+            $("div").click(function () {
+                $(this).hide();
+            });
+        })
+    </script>
+
+</body>
+
+</html>

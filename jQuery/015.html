@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <title></title>
+</head>
+
+
+<body>
+</body>
+<script>
+    function 로드다됨(e) {
+        console.log(e.currentTarget.response);
+    }
+
+    var req = new XMLHttpRequest();
+    var 주소 = "https://raw.githubusercontent.com/paullabkorea/coronaVaccinationStatus/main/data/data.json";
+
+    req.addEventListener("load", 로드다됨);
+    req.open("GET", 주소);
+    req.send();
+</script>
+
+</html>

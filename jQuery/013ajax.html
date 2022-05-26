@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <button type="button" id="btn_data">클릭해주세요!</button>
+    <div id="data">data</div>
+    <script>
+        //잘쓰지는않음 그냥 이런것도 있다!
+
+        $('#btn_data').click(function () {
+            $("#data").load('https://raw.githubusercontent.com/paullabkorea/coronaVaccinationStatus/main/data/data.json');
+        });
+
+        $('#btn_data').click(function () {
+            $("#data").load('https://raw.githubusercontent.com/paullabkorea/10000hour/main/index.html h1'); //h1만 가져오기
+        });
+
+        $('#btn_data3').click(function () {
+            $("#data3").load('https://raw.githubusercontent.com/paullabkorea/10000hour/main/index.html h1', function (responseText, statusText, xhr) {
+                console.log(responseText);
+                console.log(statusText);
+                console.log(xhr);
+                console.log(xhr.status);
+            }
+            );
+        });
+    </script>
+</body>
+
+</html>
