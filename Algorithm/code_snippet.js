@@ -1020,3 +1020,267 @@ function 병합정렬(입력배열) {
 }
 
 console.log(병합정렬(입력값))
+
+// 3.4 퀵정렬(best - O(nlog2n), worst - O(n**2))
+// 피봇값(pivot)을 기준으로 정렬(피봇값은 처음값, 중간값, 마지막 값)
+// 실무에서는 worst일 경우를 피하기 위해 피봇을 랜덤하게 주는 경우나, 피봇을 2개 사용하는 경우도 있음.
+
+let 입력값 = [66, 77, 54, 32, 10, 5, 11, 15];
+//step 1
+// 피붓값 : 66
+[54, 32, 10, 5, 11, 15] + [66] + [77]
+//step 2
+// 피붓값 : 32
+[32, 10, 5, 11, 15] + [54] + [66] + [77]
+    //step 3
+    // 피붓값 : 32
+    [10, 5, 11, 15] + [32] + [54] + [66] + [77]
+    //step 4
+    // 피붓값 : 10
+    [5] + [10] + [11, 15] + [32] + [54] + [66] + [77]
+    //step 5
+    // 피붓값 : 11
+    [5] + [10] + [11] + [15] + [32] + [54] + [66] + [77]
+
+let 입력값 = [66, 77, 54, 32, 10, 5, 11, 15];
+function 퀵정렬(입력배열) {
+    let 입력배열의길이 = 입력배열.length
+    if (입력배열의길이 <= 1) {
+        return 입력배열
+    }
+    const 피벗값 = [입력배열.shift()]
+    const 그룹하나 = []
+    const 그룹둘 = []
+
+    for (let i in 입력배열) {
+        if (입력배열[i] < 피벗값) {
+            그룹하나.push(입력배열[i])
+        } else {
+            그룹둘.push(입력배열[i])
+        }
+    }
+    console.log(`그룹하나:${그룹하나}\n그룹둘:${그룹둘}\n피벗값 :${피벗값}\n`)
+
+    return 퀵정렬(그룹하나).concat(피벗값, 퀵정렬(그룹둘))
+
+}
+console.log(퀵정렬(입력값))
+
+
+// 페이지 교체 알고리즘 
+
+// 트리와그래프
+
+const tree = {
+    root: {
+        value: 5,
+        left: {
+            value: 3,
+            left: {
+                value: 1,
+                left: null,
+                right: null
+            },
+            right: {
+                value: 4,
+                left: null,
+                right: null
+            },
+        },
+        right: {
+            value: 8,
+            left: {
+                value: 6,
+                left: null,
+                right: null
+            },
+            right: {
+                value: 9,
+                left: null,
+                right: null
+            }
+        }
+    }
+}
+
+tree.root.value
+
+tree.root.right.value
+
+tree.root.right.right.value
+
+//
+
+const tree = {
+    root: 55,
+    left: null,
+    right: null
+}
+
+let node1 = { value: 99, left: null, right: null }
+let node2 = { value: 53, left: null, right: null }
+let node3 = { value: 37, left: null, right: null }
+let node4 = { value: 54, left: null, right: null }
+tree.right = node1
+tree.left = node2
+node2.left = node3
+node2.right = node4
+
+root.root // 55
+root.right.value // 99
+root.left.value // 53
+root.left.left.value // 37
+
+//step 1 노드생성
+class Node {
+
+    constructor(data) {
+        this.data = data
+        //this.child = [] //진트리가 아닌 트리 
+        this.left = null
+        this.right = null
+    }
+}
+
+노드1 = new Node(55)
+노드2 = new Node(99)
+노드3 = new Node(53)
+노드4 = new Node(37)
+노드5 = new Node(54)
+
+노드1.right = 노드2
+노드1.left = 노드3
+노드3.right = 노드5
+노드3.left = 노드4
+
+
+//
+
+class Tree {
+    constructor(data) {
+        let init = new Node(data)
+        this.root = init
+        this.데이터수 = 0
+
+        this.데이터수 = 0
+        this.데이터들 = []
+    }
+
+    length() {
+        return this.데이터수
+    }
+
+    insert(data) {
+        let 새로운노드 = new Node(data)
+        let 순회용현재노드 = this.root
+
+        while (순회용현재노드) {
+            if (data === 순회용현재노드.data) {
+                //값이 같으면 추가시켜주지 않습니다
+                return
+            }
+            if (data < 순회용현재노드.data) {
+                //들어온 데이터가 작은경우 왼쪽에 붙여야 합니다.
+                //해당부분이 비어있으면 데이터를 넣고, 아니면  계속 타고내려간다. 
+            }
+            if (data > 순회용현재노드.data) {
+                //들어온 데이터가 큰 경우 오른쪽에 붙여야합니다.
+                //해당부분이 비어있으면 데이터를 넣고, 아니면  계속 타고내려간다. 
+                if (!순회용현재노드.left) {
+                    순회용현재노드.left = 새로운노드
+                    return
+                }
+                순회용현재노드 = 순회용현재노드.left
+            }
+            if (data > 순회용현재노드.data) {
+                if (!순회용현재노드.right) {
+                    순회용현재노드.right = 새로운노드
+                    this.데이터수 += 1
+                    return
+                }
+                순회용현재노드 = 순회용현재노드.right
+            }
+        }
+    }
+};
+
+//깊스너큐, 파선아실
+DFS() {
+    // 깊이우선탐색, DFS(Depth First Search)
+    // Stack 이용!
+    let 결과값 = []
+    let 스택 = [this.root]
+
+    while (스택.length !== 0) {
+        let current = 스택.pop()
+        if (current.right) {
+            스택.push(current.right)
+        }
+        if (current.left) {
+            스택.push(current.left)
+        }
+        결과값.push(current.data)
+    }
+    return 결과값
+}
+
+BFS() {
+    // 너비우선탐색, BFS(Breadth First Search)
+    // Queue 이용!
+    let 결과값 = []
+    let 스택 = [this.root]
+
+    while (스택.length !== 0) {
+        let current = 스택.pop()
+        if (current.right) {
+            스택.push(current.right)
+        }
+        if (current.left) {
+            스택.push(current.left)
+        }
+        결과값.push(current.data)
+    }
+    return 결과값
+}
+
+
+let t = new Tree(5)
+t.insert(3);
+t.insert(8);
+t.insert(1);
+t.insert(4);
+t.insert(6);
+t.insert(9);
+
+
+// 매개변수	값
+// n	5
+// arr1	[9, 20, 28, 18, 11]
+// arr2	[30, 1, 21, 17, 28]
+// 출력	["#####","# # #", "### #", "# ##", "#####"]
+let x = 9
+x.toString(2)
+x.toString(2).replace(/1/g, '#')
+x.toString(2).replace(/1/g, '#').replace(/0/g, ' ')
+'#  #'
+
+    (9 | 30).toString(2).replace(/1/g, '#').replace(/0/g, ' ')
+
+    (20 | 1).toString(2).replace(/1/g, '#').replace(/0/g, ' ')
+
+n = 5
+arr1 = [9, 20, 28, 18, 11]
+arr2 = [30, 1, 21, 17, 28]
+
+function solution(n, arr1, arr2) {
+    result = []
+    for (let i = 0; i < n; i++) {
+        result.push((arr1[i] | arr2[i])
+            .toString(2)
+            .replace(/1/g, '#')
+            .replace(/0/g, ' '))
+    }
+    return result
+}
+
+//유틸리티코드 //
