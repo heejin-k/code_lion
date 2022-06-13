@@ -1,7 +1,7 @@
 import './productName.css'
 
-export default function ProductName({productName}) {
+export default function ProductName({ productName }) {
   return (
-    <p>{productName}</p>
+    <strong className="product-name sl-ellipsis">{productName}</strong>
   )
 }

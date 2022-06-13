@@ -1,7 +1,7 @@
 import './productPrice.css'
 
-export default function ProductPrice({price}) {
+export default function ProductPrice({ price }) {
   return (
-    <p>{price}</p>
+    <strong class="price m-price">{price}<span>원</span></strong>
   )
 }
