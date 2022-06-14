@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 const App = () => {
     const [emailValue, setEmailValue] = useState(""); // email state 값

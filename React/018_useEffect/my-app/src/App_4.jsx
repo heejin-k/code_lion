@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Counter() {
     const [count, setCount] = useState(0)
-    const [checkRender, setCheckRender] = useState(false);
+    const [checkRender, setCheckRender] = useState(false)
     const countUp = () => {
 
         setCount(count + 1)
