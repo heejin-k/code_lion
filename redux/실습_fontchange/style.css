@@ -1,0 +1,20 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=East+Sea+Dokdo&family=Gaegu:wght@300&family=Gamja+Flower&family=Hi+Melody&family=Nanum+Pen+Script&display=swap');
+
+.wrap {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container {
+    width: 300px;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
